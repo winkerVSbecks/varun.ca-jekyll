@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    {% if page.title %}
+      {{ page.title }}
+    {% else %}
+      {{ site.title }} – {{ site.description }}
+    {% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | replace: 'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="{{ 'favicon.ico' | prepend: site.baseurl | prepend: site.url }}">
+  <style>
+    {% include tachyons.css %}
+  </style>
+  <link href="{{ '/css/syntax.css' | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet">
+  <link href="{{ '/css/i.css' | prepend: site.baseurl | prepend: site.url }}" rel="stylesheet">
+  <style>
+    h1, h2, h3, h4, h5, h6,
+    .system-sans {
+      font-family: -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+      'avenir next', avenir, /* MacOS and iOS */
+      'Segoe UI', /* Windows */
+      'lucida grande', /* Older MacOS */
+      'helvetica neue', helvetica, /* Older MacOS */
+      'Fira Sans', /* Firefox OS */
+      roboto, noto, /* Google stuff */
+      'Droid Sans', /* Old Google stuff */
+      cantarell, oxygen, ubuntu, /* Linux stuff */
+      'franklin gothic medium', 'century gothic', /* Windows stuff */
+      'Liberation Sans', /* Linux */
+      sans-serif; /* Everything else */
+    }
+    ::-moz-selection { background: #ededff; }
+    ::selection { background: #ededff; }
+  </style>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@{{ site.twitter_username }}"/>
+  <meta name="twitter:title" content="Writing"/>
+  <meta name="twitter:description" content="{{ site.description }}"/>
+  <meta name="twitter:image"/>
+</head>

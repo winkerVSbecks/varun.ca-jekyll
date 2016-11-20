@@ -1,0 +1,15 @@
+<aside class="ph3 pv4 dark-gray bt b--light-gray">
+  <h1 class="ttu tracked f5 fw8">Related Posts</h1>
+  <ul>
+    {% for post in site.related_posts limit: 5 %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="link dim near-black db f4 pv2" title="{{post.title}}">
+        {{ post.title }}
+        <time class="f6 gray" datetime="{{ post.date }}">
+          {{ post.date | date: "%d %B, %Y" }}
+        </time>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>

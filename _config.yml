@@ -1,0 +1,38 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+author: Varun Vachhar
+title: varun vachhar
+email: varunvachhar@gmail.com
+description: finder of new ways to confuse myself
+baseurl: ""
+url: http://varun.ca
+twitter_username: winkerVSbecks
+github_username:  winkerVSbecks
+
+# Post settings
+paginate: 3
+excerpt_separator: <!--more-->
+permalink: /:title
+
+# Build settings
+markdown: kramdown
+theme: minima
+highlighter: rouge
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
+
+
+# Custom vars
+version: 1.0.0
+github:
+  repo: https://github.com/winkerVSbecks/varun.ca

@@ -1,0 +1,62 @@
+{% include head.html %}
+<body>
+  <article class="mw7 center ph3 mv6 dark-gray">
+    <header class="system-sans mb6">
+      <time class="f6 gray" datetime="{{ page.date }}">
+        {{ page.date | date: "%d %B, %Y" }}
+      </time>
+      <h1 class="f1 mt1">
+        {{ page.title }}
+      </h1>
+      {% if page.subtitle %}
+      <h2>
+        {{page.subtitle}}
+      </h2>
+      {% endif %}
+    </header>
+
+    <!-- This is where post content lives -->
+    <div class="f4 lh-copy nested-copy-line-height nested-copy-seperator nested-img nested-headings nested-link"
+      id="js-post-content">
+      {{ content }}
+    </div>
+    <!-- end of post content -->
+
+    <div class="mt5">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="winkerVSbecks" data-size="large">Tweet</a>
+    </div>
+  </article>
+
+  <div class="mw7 center">
+  {% include related-posts.html %}
+  {% include footer.html %}
+  </div>
+  {% include google-analytics.html %}
+
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script>
+    $('h2,h3,h4,h5,h6').filter('[id]').each(function () {
+      $(this).html('<a href="#'+$(this).attr('id')+'" class="link" style="color: inherit;">' + $(this).text() + '</a>');
+    });
+  </script>
+</body>
+</html>
