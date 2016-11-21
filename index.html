@@ -3,44 +3,21 @@ layout: default
 title: home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<div class="mw7 center dark-gray">
+  <header class="mt6">
+    <h1 class="f-headline mb0">Varun Vachhar</h1>
+    <p class="f1 gray mt0">finder of new ways to confuse myself</p>
+    <div class="bb b--light-gray bw2 w4"></div>
+  </header>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <nav>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Github</a></li>
+      <li><a href="#">CodePen</a></li>
+      <li><a href="{{ '/writing' | absolute_url }}">Writing</a></li>
+    </ul>
+  </nav>
 
-    {{ post.excerpt }}
-
-    {% if post.content contains '<!--more-->' %}
-      <p>
-        <a class="read-more"
-          href="{{ post.url }}" role="button">
-          ↳ Read more
-        </a>
-      </p>
-    {% endif %}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older icon-arrow-left" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer icon-arrow-right" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer icon-arrow-right" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+  {% include footer.html %}
 </div>

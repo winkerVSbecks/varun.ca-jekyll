@@ -1,13 +1,15 @@
-<aside class="ph3 pv4 dark-gray bt b--light-gray">
-  <h1 class="ttu tracked f5 fw8">Related Posts</h1>
-  <ul>
+<aside class="pv4 dark-gray bt bw1 b--light-gray">
+  <h1 class="f4">Related Posts</h1>
+  <ul class="pl4">
     {% for post in site.related_posts limit: 5 %}
     <li>
-      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="link dim near-black db f4 pv2" title="{{post.title}}">
+      <a href="{{ post.url | absolute_url }}"
+        class="link dim near-black db f5 f4-ns pv2"
+        title="{{ post.title }}">
         {{ post.title }}
-        <time class="f6 gray" datetime="{{ post.date }}">
-          {{ post.date | date: "%d %B, %Y" }}
-        </time>
+        <date class="f6 gray" datetime="{{ post.date }}">
+          {% include date.html date=post.date %}
+        </date>
       </a>
     </li>
     {% endfor %}

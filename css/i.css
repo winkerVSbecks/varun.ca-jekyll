@@ -260,7 +260,7 @@ pre {
 }
 
 :not(pre) > code {
-  font-size: 80%;
+  font-size: 70%;
   background-color: #ececfd;
   padding: 2px 4px;
 }
@@ -301,6 +301,31 @@ figure.highlight {
 .nested-headline-line-height h5,
 .nested-headline-line-height h6 {
   line-height: 1.25;
+}
+
+.nested-headings h1 a:hover,
+.nested-headings h2 a:hover,
+.nested-headings h3 a:hover,
+.nested-headings h4 a:hover,
+.nested-headings h5 a:hover,
+.nested-headings h6 a:hover,
+.nested-headings h1 a,
+.nested-headings h2 a,
+.nested-headings h3 a,
+.nested-headings h4 a,
+.nested-headings h5 a,
+.nested-headings h6 a  {
+  border-bottom-color: rgba(0,0,0,0) !important;
+}
+
+.nested-headings h1 a:hover:after,
+.nested-headings h2 a:hover:after,
+.nested-headings h3 a:hover:after,
+.nested-headings h4 a:hover:after,
+.nested-headings h5 a:hover:after,
+.nested-headings h6 a:hover:after {
+  content: ' §';
+  opacity: 0.5;
 }
 
 .nested-headings h1 {

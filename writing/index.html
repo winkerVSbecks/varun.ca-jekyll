@@ -1,0 +1,43 @@
+---
+layout: default
+title: Writing
+---
+
+<nav class="border-box mw7 center ph3 mt6 flex-ns system-sans dim">
+  <a href="{{ '/' | absolute_url }}"
+    class="mid-gray f6 ma0 mr2 link b ttu tracked">
+    Varun Vachhar
+  </a>
+  <p class="f6 light-silver ma0 tracked">
+    finder of new ways to confuse myself
+  </p>
+</nav>
+
+<article class="mw7 center ph3 mv6 dark-gray">
+  <header class="system-sans">
+    <h1 class="f3 f2-m f1-ns ma0">
+      {{ page.title }}
+    </h1>
+    <p class="light-silver mb0">Thoughts about JavaScript, CSS and reactive animations.</p>
+  </header>
+  <div class="bb b--light-gray bw2 w3 mv5"></div>
+  <ul class="list pl0">
+    {% for post in site.posts %}
+      <li class="mb4 pb3">
+        <a href="{{ post.url }}"
+          title="{{ post.title }}"
+          class="link dim db">
+          <date class="f6 gray db mb1" datetime="{{ post.date }}">
+            {% include date.html date=post.date %}
+          </date>
+          <span class="dark-gray f2">{{ post.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<div class="mw7 center ph3">
+  {% include footer.html %}
+</div>
+{% include google-analytics.html %}
