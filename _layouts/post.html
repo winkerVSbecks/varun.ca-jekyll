@@ -1,14 +1,6 @@
 {% include head.html %}
 <body>
-  <nav class="border-box mw7 center ph3 mt6 flex-ns system-sans dim">
-    <a href="{{ 'writing' | absolute_url }}"
-      class="mid-gray f6 ma0 mr2 link b ttu tracked">
-      Varun Vachhar
-    </a>
-    <p class="f6 light-silver ma0 tracked">
-      finder of new ways to confuse myself
-    </p>
-  </nav>
+  {% include nav.html %}
 
   <article class="mw7 center ph3 mv6 dark-gray">
     <header class="system-sans mb6">
@@ -21,14 +13,17 @@
     </header>
 
     <!-- post content -->
-    <div class="f5 f4-ns lh-copy nested-copy-line-height nested-copy-seperator nested-img nested-headings nested-link"
+    <div class="f5 f4-ns lh-copy nested"
       id="js-post-content">
       {{ content }}
     </div>
     <!-- end of post content -->
 
     <div class="mt5">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="winkerVSbecks" data-size="large">Tweet</a>
+      <a href="https://twitter.com/share"
+        class="twitter-share-button"
+        data-via="winkerVSbecks"
+        data-size="large">Tweet</a>
     </div>
   </article>
 

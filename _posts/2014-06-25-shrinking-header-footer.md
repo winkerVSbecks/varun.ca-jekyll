@@ -8,11 +8,11 @@ title: Two Level Shrinking Header and Footer with Ionic Framework
 
 <br/>
 
-The [Ionic Framework](http://ionicframework.com/) is an open source front-end framework for developing hybrid mobile apps with Cordova and AngularJS. I'm a big fan and use it a lot in my work at [rangle.io](http://rangle.io)! We are a full-stack web and mobile app development consultancy.
+The  [Ionic Framework](http://ionicframework.com/) is an open source front-end framework for developing hybrid mobile apps with Cordova and AngularJS. I'm a big fan and use it a lot in my work at  [rangle.io](http://rangle.io)! We are a full-stack web and mobile app development consultancy.
 
 <!--more-->
 
-One of the apps we are currently developing has an infinite stream similar to Facebook. Therefore, we decided to mimic the iOS shrinking header UI, to give the user more screen space for actual content. Ionic has had a [demo](http://codepen.io/ionic/pen/hIzFp) for this for quite some time. However, the shrinking behaviour is limited to the top of the scroll view.
+One of the apps we are currently developing has an infinite stream similar to Facebook. Therefore, we decided to mimic the iOS shrinking header UI, to give the user more screen space for actual content. Ionic has had a  [demo](http://codepen.io/ionic/pen/hIzFp) for this for quite some time. However, the shrinking behaviour is limited to the top of the scroll view.
 
 We wanted to take this one step further and allow the shrinking and expansion to happen at any point during the scroll view. Also, we have a two level header: main header and a secondary toolbar.
 
@@ -52,8 +52,10 @@ The final step is to apply the actual CSS transforms from within the `ionic.requ
 
 The `ionic.requestAnimationFrame` calls the `window.requestAnimationFrame` or a polyfill if it's not available. This helps optimize the animation updates making it much more smoother:
 
-> The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. The method takes as an argument a callback to be invoked before the repaint.
+<blockquote>
+  <p>The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. The method takes as an argument a callback to be invoked before the repaint.</p>
 
-> This will request that your animation function be called before the browser performs the next repaint. The number of callbacks is usually 60 times per second.
+  <p>This will request that your animation function be called before the browser performs the next repaint. The number of callbacks is usually 60 times per second.</p>
 
-<cite>&ndash; <a href="https://developer.mozilla.org/en/docs/Web/API/window.requestAnimationFrame">Mozilla Developer Network</a></cite>
+  <cite>&mdash; <a href="https://developer.mozilla.org/en/docs/Web/API/window.requestAnimationFrame">Mozilla Developer Network</a></cite>
+</blockquote>

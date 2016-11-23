@@ -10,8 +10,8 @@ citation-link: https://dribbble.com/shots/1623679-Open-Close
 
 I wanted to replicate CreativeDash's open &amp; close animation with pure CSS/SASS, but don't think it's possible without SVG path animations. This is the closest I got.
 
-Kyle Henwood wrote a great [blog post](https://raygun.io/blog/2014/07/making-svg-html-burger-button) on how to build this with SVG.
+Kyle Henwood wrote a great  [blog post](https://raygun.io/blog/2014/07/making-svg-html-burger-button) on how to build this with SVG.
 
-Also, Anders Ingemann's tutorial &ndash; [Radial progress indicator using CSS](https://medium.com/@andsens/radial-progress-indicator-using-css-a917b80c43f9) &ndash; was really helpful in trying to figure out the circular mask.
+Also, Anders Ingemann's tutorial &ndash;  [Radial progress indicator using CSS](https://medium.com/@andsens/radial-progress-indicator-using-css-a917b80c43f9) &ndash; was really helpful in trying to figure out the circular mask.
 
 {% include citation.html %}

@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Flattening Deep Hierarchies of Components
-demo: http://ooaamm.com/
-source: https://github.com/winkerVSbecks/oam-site
 ---
 
 Components are an awesome tool for building interfaces. They allow you to break down the UI into distinct reusable elements. These can then be composed to build complex applications in a more sustainable way.
@@ -168,7 +166,7 @@ And here is the final version in Angular 2:
 ```
 <!-- Card with title, caption and icon -->
 <Card>
-  <Media [source]="'img/rotary-phone.png'"></Media>
+  <Media  [source]="'img/rotary-phone.png'"></Media>
 
   <Block paddingX="2" paddingY="2">
 

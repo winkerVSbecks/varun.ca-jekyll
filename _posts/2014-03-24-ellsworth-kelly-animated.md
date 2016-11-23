@@ -5,18 +5,21 @@ source: https://github.com/winkerVSbecks/ellsworthKellyAnimated
 demo: http://winkervsbecks.github.io/ellsworthKellyAnimated
 ---
 
-In February 2014 Google launched it's [DevArt](https://devart.withgoogle.com/#/about) project in partnership with [Barbican](https://www.barbican.org.uk/). In Google's words:
+![](/img/orange.gif)
+
+{% include demo-source.html %}
+
+In February 2014 Google launched it's  [DevArt](https://devart.withgoogle.com/#/about) project in partnership with  [Barbican](https://www.barbican.org.uk/). In Google's words:
 
 > DevArt is a celebration of art made with code by artists that push the possibilities of creativity - where technology is their canvas and code is their raw material.
 
-This was my entry and it ended up being [shortlisted](https://devart.withgoogle.com/#/project/18198727) for the finals.
+This was my entry and it ended up being  [shortlisted](https://devart.withgoogle.com/#/project/18198727) for the finals.
 
-![](/img/orange.gif)
 ![](/img/ropeinterface.gif)
 
 {% include demo-source.html %}
 
-A couple of years ago I made a [Processing](http://processing.org/) sketch with the logic described in the image below. Shortly thereafter I came across Ellsworth Kelly's [Black Relief II](http://www.matthewmarks.com/new-york/exhibitions/2011-02-12_ellsworth-kelly/works-in-exhibition/#/images/5/). It seemed that, unknowingly, I had created an animated version of his painting.
+A couple of years ago I made a  [Processing](http://processing.org/) sketch with the logic described in the image below. Shortly thereafter I came across Ellsworth Kelly's  [Black Relief II](http://www.matthewmarks.com/new-york/exhibitions/2011-02-12_ellsworth-kelly/works-in-exhibition/#/images/5/). It seemed that, unknowingly, I had created an animated version of his painting.
 
 <!--more-->
 
@@ -26,14 +29,14 @@ This led me to explore more of his work. His paintings carry an immense amount o
 
 This project is an attempt to animate some of his pieces using web-based technologies.
 
-Most of the works are made using [Box2dWeb](https://code.google.com/p/box2dweb/). A simple mouse click allows you to animate them.
+Most of the works are made using  [Box2dWeb](https://code.google.com/p/box2dweb/). A simple mouse click allows you to animate them.
 
 In the first piece, you can grab the interface of the blue blob and the surrounding green fill and drag it around. Press `?` to see the underlying skeleton.
 
-The project is also available as a Google Chrome App: [Ellsworth Kelly Animated](https://chrome.google.com/webstore/detail/ellsworth-kelly-animated/mhgohnogimfoohafafblgpgonabjhlal)
+The project is also available as a Google Chrome App:  [Ellsworth Kelly Animated](https://chrome.google.com/webstore/detail/ellsworth-kelly-animated/mhgohnogimfoohafafblgpgonabjhlal)
 
 ## The Code
-I wanted to play around with the idea of springy membranes. This was particularly inspired by the [Red Curve Relief](http://1.bp.blogspot.com/-h8vIARrJHTI/TVgr1IHdJbI/AAAAAAAADZM/eF_8iRYRX08/s1600/43b6c106.jpg) artwork by Ellsworth Kelly.
+I wanted to play around with the idea of springy membranes. This was particularly inspired by the  [Red Curve Relief](http://1.bp.blogspot.com/-h8vIARrJHTI/TVgr1IHdJbI/AAAAAAAADZM/eF_8iRYRX08/s1600/43b6c106.jpg) artwork by Ellsworth Kelly.
 
 To do so, I had two options:
 
@@ -60,7 +63,7 @@ SpringyTriangle.prototype.impulse = function () {
 };
 {% endhighlight %}
 
-The other pieces used similar ideas of node based skeleton with an overlaid  shape. I explain the process behind each piece in more detail on the [project site](https://devart.withgoogle.com/#/project/18198727).
+The other pieces used similar ideas of node based skeleton with an overlaid  shape. I explain the process behind each piece in more detail on the  [project site](https://devart.withgoogle.com/#/project/18198727).
 
 ## Early Prototypes Made with Processing
 

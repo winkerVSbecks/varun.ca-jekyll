@@ -26,7 +26,7 @@ You start with a simple tetrahedron. As you execute the truncation you can creat
 6. To execute the truncation we simply move **A1** along **L1**. Towards the mid-point of **L1**.
 7. We do the same for **A2** and **A3**.
 
-A fairly simple algorithm that can be generalise for the entire shape/solid. You can even generalize it for a set of shapes, such as 2D polygons. Which is exactly what I did for my [demo](http://winkervsbecks.github.io/truncation).
+A fairly simple algorithm that can be generalise for the entire shape/solid. You can even generalize it for a set of shapes, such as 2D polygons. Which is exactly what I did for my  [demo](http://winkervsbecks.github.io/truncation).
 
 I used React and SVG for this project too. A quick overview of the code:
 
