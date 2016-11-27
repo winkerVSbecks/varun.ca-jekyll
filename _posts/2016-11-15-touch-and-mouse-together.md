@@ -7,7 +7,7 @@ If you have built a web app in the past few years, you've probably had to deal w
 
 <!--more-->
 
-{: .ba .b--light-gray center }
+{: .ba .b--secondary center }
 ![chat-head demo](/img/chat-head-demo.gif)
 
 In this post we will walk through the process of implementing one such gesture– pan. I will demonstrate this by building a draggable chat-head component.
@@ -114,7 +114,7 @@ The pan gesture can be broken down into three stages: pan start, pan & pan end. 
   onDragEnd={ this.onPanEnd}>
   ```
 
-{: .ba .b--light-gray center }
+{: .ba .b--secondary center }
 ![breakdown of the drag gesture](/img/drag.gif)
 
 ### Pan Start
@@ -131,7 +131,7 @@ onPanStart = e => {
 
 When you drag an element on desktop you end up with a _ghost_ image. This is know as the  [drag image](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Drag_operations#dragfeedback). To get around this we can set the drag image to a fake `0px × 0px` image.
 
-{: .ba .b--light-gray center }
+{: .ba .b--secondary center }
 ![ghost image that appears while dragging on desktop](/img/ghost.gif)
 
 ```js

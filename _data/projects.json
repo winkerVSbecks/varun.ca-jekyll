@@ -1,0 +1,58 @@
+[
+  {
+    name: "Gems",
+    link: "http://winkervsbecks.github.io/gems",
+    repo: "https://github.com/winkerVSbecks/gems",
+    img: "/img/gems.gif"
+  },
+  {
+    name: "Draper",
+    repo: "https://github.com/winkerVSbecks/draper",
+    link: "https://github.com/winkerVSbecks/draper",
+    img: "/img/draper.gif"
+  },
+  {
+    name: "OAM",
+    link: "http://ooaamm.com",
+    repo: "https://github.com/winkerVSbecks/oam-site",
+    img: "/img/oam-alt.gif"
+  },
+  {
+    name: "A Triangle Every Day",
+    repo: "https://github.com/winkerVSbecks/a-triangle-everyday",
+    img: "/img/triangleninja.gif"
+
+  },
+  {
+    name: "Ellsworth Kelly Animated",
+    repo: "https://github.com/winkerVSbecks/ellsworthKellyAnimated",
+    link: "http://winkervsbecks.github.io/ellsworthKellyAnimated",
+    img: "/img/ellsworth-kelly.gif"
+  },
+  {
+    name: "Swipe-Li",
+    repo: "https://github.com/winkerVSbecks/swipe-li",
+    link: "https://github.com/winkerVSbecks/swipe-li",
+    img: "/img/swipe-li.gif"
+  },
+  {
+    name: "Moti",
+    repo: "https://github.com/winkerVSbecks/gems",
+    img: "/img/moti.jpg",
+    link: "http://moti.ph"
+  },
+  {
+    name: "Chaos Theory",
+    repo: "https://github.com/winkervsbecks/chaos-theory/",
+    link: "https://vimeo.com/23056893",
+    img: "/img/chaostheory.png"
+  },
+  {
+    name: "Tethered Motion",
+    img: "/img/wave.gif"
+  },
+  {
+    name: "Homesick",
+    img: "http://lambdafunction.ca/instl/homesick.png"
+  }
+]
