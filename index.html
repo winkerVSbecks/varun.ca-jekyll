@@ -59,14 +59,7 @@ title: Varun Vachhar
         class="db link f4 bb pv3 dark-gray hide-move-child flex items-center"
         href="{{ 'writing' | absolute_url }}">
         Recent Posts
-
-        <svg class="child ml1"
-          viewBox="0 0 24 24"
-          style="width: 1em; height: 1em;">
-        	<path fill="currentColor"
-            d="M24 12l-11-8v6h-13v4h13v6z"></path>
-        </svg>
-
+        {% include icon.html type="arrow-right" class="child ml1" %}
       </a>
     </h2>
 
@@ -84,11 +77,7 @@ title: Varun Vachhar
     <h2 class="mt0 f4 mh3">Projects</h2>
 
     <!-- <div class="overflow-x-scroll nowrap"> -->
-    <div class="flex items-stretch">
-      <div class="w3 w4-ns f3 pointer dim flex items-center justify-center dn flex-ns"
-        id="projects-prev">
-        {% include icon.html type="chevron-left" %}
-      </div>
+    <div class="flex items-stretch pl3">
       <div class="owl-carousel flex-auto">
         {% for project in site.data.projects %}
           {% include card.html
