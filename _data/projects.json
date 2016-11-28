@@ -55,6 +55,7 @@
   {
     name: "The Receipt Site",
     repo: "https://github.com/winkerVSbecks/The-Receipt-Site",
+    link: "http://winkervsbecks.github.io/The-Receipt-Site",
     img: "/img/cbi.png"
   },
   {
@@ -65,6 +66,7 @@
   },
   {
     name: "What's In A Motor",
+    link: "http://winkervsbecks.github.io/whatsInAMotor",
     img: "/img/whats-in-a-motor.png"
   },
   {
@@ -72,7 +74,8 @@
     img: "/img/consolefont.png"
   },
   {
-    name: "FM Belfast - Underwear (Cover Art)",
+    name: "FM Belfast (Cover Art)",
+    link: "https://open.spotify.com/album/7rRgmi1aCKg3l8OEe247VY",
     img: "/img/fmbelfast.png"
   }
 ]
