@@ -20,6 +20,7 @@
   {
     name: "A Triangle Every Day",
     repo: "https://github.com/winkerVSbecks/a-triangle-everyday",
+    link: "http://winkervsbecks.github.io/a-triangle-everyday",
     img: "/img/triangleninja.gif"
 
   },
@@ -38,8 +39,23 @@
   {
     name: "Moti",
     repo: "https://github.com/winkerVSbecks/gems",
-    img: "/img/moti.jpg",
-    link: "http://moti.ph"
+    link: "http://moti.ph",
+    img: "/img/moti.jpg"
+  },
+  {
+    name: "Homesick",
+    link: "/projects/homesick.html",
+    img: "/img/homesick.png"
+  },
+  {
+    name: "Tethered Motion",
+    link: "/projects/tethered-motion.html",
+    img: "/img/wave.gif"
+  },
+  {
+    name: "The Receipt Site",
+    repo: "https://github.com/winkerVSbecks/The-Receipt-Site",
+    img: "/img/cbi.png"
   },
   {
     name: "Chaos Theory",
@@ -48,11 +64,15 @@
     img: "/img/chaostheory.png"
   },
   {
-    name: "Tethered Motion",
-    img: "/img/wave.gif"
+    name: "What's In A Motor",
+    img: "/img/whats-in-a-motor.png"
   },
   {
-    name: "Homesick",
-    img: "http://lambdafunction.ca/instl/homesick.png"
+    name: "Console Font",
+    img: "/img/consolefont.png"
+  },
+  {
+    name: "FM Belfast - Underwear (Cover Art)",
+    img: "/img/fmbelfast.png"
   }
 ]

@@ -1,7 +1,8 @@
 ---
 layout: default
-title: home
+title: Varun Vachhar
 ---
+{% include icon-system.html %}
 <div class="mw9 center ph5-l f5 lh-copy dark-gray sans-serif">
 
   <header class="mt6 mb5 ph3">
@@ -79,37 +80,30 @@ title: home
     {% endfor %}
   </section>
 
-  <section class="mh3 mb6">
-    <h2 class="mt0 f4">Projects</h2>
+  <section class="mb6">
+    <h2 class="mt0 f4 mh3">Projects</h2>
 
-    <div class="overflow-x-scroll nowrap">
-      {% for project in site.data.projects %}
-        {% include card.html
-          img=project.img
-          title=project.name
-          link=project.link
-        %}
-      {% endfor %}
-
-      <!-- <a class="dib ba b--secondary mr4 pointer pa1 bg-secondary"
-      style="width: 300px">
-        <div class="aspect-ratio aspect-ratio--4x3">
-          <div class="aspect-ratio--object cover b flex items-center justify-center blue ttu tracked hide-move-child">
-            More
-
-            <svg class="child ml1"
-              viewBox="0 0 24 24"
-              style="width: 1em; height: 1em;">
-            	<path fill="currentColor"
-                d="M24 12l-11-8v6h-13v4h13v6z"></path>
-            </svg>
-          </div>
-        </div>
-      </a> -->
+    <!-- <div class="overflow-x-scroll nowrap"> -->
+    <div class="mid-gray flex items-stretch">
+      <div class="w4 f1 pointer dim flex items-center justify-center dn flex-ns"
+        id="projects-prev">
+        {% include icon.html type="chevron-left" %}
+      </div>
+      <div class="owl-carousel flex-auto">
+        {% for project in site.data.projects %}
+          {% include card.html
+            img=project.img
+            title=project.name
+            link=project.link
+          %}
+        {% endfor %}
+      </div>
+      <div class="w4 f1 pointer dim flex items-center justify-center dn flex-ns"
+        id="projects-next">
+        {% include icon.html type="chevron-right" %}
+      </div>
     </div>
   </section>
-
-  <!--  Moti, Oracle, Motion Poetry, Homesick, Tethered Motion, Attracted, What's In A Motor, Console Font, FM Belfast - "Underwear", Now In 3D, The Receipt Site, Dial-A-Car, Mr. Kranendonk  -->
 
   {% include footer.html %}
 </div>
@@ -119,5 +113,20 @@ title: home
     var t = new Audio('https://www.nameshouts.com/libs/media/varun_hi.mp3');
     document.querySelector('.vocalizer')
       .addEventListener('click', function() { t.play() });
+
+    var owl = $('.owl-carousel')
+
+    owl.owlCarousel({
+      stagePadding: 64,
+      loop: true,
+      autoWidth: true,
+      dots: false,
+      nav: false
+    });
+
+    $('#projects-next').click(function() { owl.trigger('next.owl.carousel'); });
+    $('#projects-prev').click(function() { owl.trigger('prev.owl.carousel'); });
   };
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.js" /></script>
