@@ -10,10 +10,10 @@ title: Varun Vachhar
       <span class="vocalizer pointer relative bg-child bg-child-gold">
         Varun Vachhar
         <svg viewBox="0 0 24 24"
-          class="br-100 bg-moon-gray child"
+          class="br-100 bg-moon-gray child white"
           width="10" height="10"
           style="padding: 2px;">
-          <path fill="#fff" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+          <use xlink:href="#speaker"></use>
         </svg>
       </span>
     </h1>
@@ -22,7 +22,7 @@ title: Varun Vachhar
 
   <section class="mb4 ph3">
     <h2 class="ma0 f4">About</h2>
-    <p class="mt0 measure-wide">Originally from New Delhi, India. I am a developer with a strong focus on design, interactivity and animation. I currently live in Toronto, Canada and work as a JavaScript developer at <a class="link dim primary" href="https://rangle.io/">Rangle.io</a>. In my spare time, I like to experiment with creative coding, <a class="link dim primary" href="http://triangle.life">triangles</a> and making playful experiences for the web.</p>
+    <p class="mt0 measure-wide">Originally from New Delhi, India. I am a developer with a strong focus on design, interactivity and animation. I currently live in Toronto, Canada and work as a JavaScript developer at <a class="link dim primary" href="https://rangle.io/">Rangle.io</a>. In my spare time, I like to experiment with creative coding, making playful experiences for the web and <a class="link dim primary" href="http://triangle.life">triangles</a>.</p>
   </section>
 
   <nav class="measure-wide mb6">
@@ -84,8 +84,8 @@ title: Varun Vachhar
     <h2 class="mt0 f4 mh3">Projects</h2>
 
     <!-- <div class="overflow-x-scroll nowrap"> -->
-    <div class="mid-gray flex items-stretch">
-      <div class="w4 f1 pointer dim flex items-center justify-center dn flex-ns"
+    <div class="flex items-stretch">
+      <div class="w3 w4-ns f3 pointer dim flex items-center justify-center dn flex-ns"
         id="projects-prev">
         {% include icon.html type="chevron-left" %}
       </div>
@@ -98,14 +98,14 @@ title: Varun Vachhar
           %}
         {% endfor %}
       </div>
-      <div class="w4 f1 pointer dim flex items-center justify-center dn flex-ns"
+      <div class="w3 w4-ns f3 pointer dim flex items-center justify-center dn flex-ns"
         id="projects-next">
         {% include icon.html type="chevron-right" %}
       </div>
     </div>
   </section>
 
-  {% include footer.html %}
+  {% include footer.html class=" ph3" %}
 </div>
 
 <script>
