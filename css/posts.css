@@ -1,0 +1,173 @@
+#angularjs-webgl-directive:hover,
+#angularjs-webgl-directive:focus {
+  background-image: url('/img/webgl.gif');
+  background-position: center center;
+  background-size: 100%;
+  color: white;
+}
+#angularjs-webgl-directive:hover date,
+#angularjs-webgl-directive:focus date { color: white !important; }
+
+#ellsworth-kelly-animated:hover,
+#ellsworth-kelly-animated:focus {
+  background-image: url('/img/orange.gif');
+  background-position: center 20%;
+  background-size: 100%;
+}
+
+#swipe-li:hover,
+#swipe-li:focus {
+  background-image: url('/img/swipe-li.gif');
+  background-position: center top;
+  background-size: 100%;
+}
+
+#open-and-close:hover,
+#open-and-close:focus {
+  background-image: url('/img/open-close.gif');
+  background-position: center center;
+  background-size: 100%;
+  color: white;
+}
+#open-and-close:hover date,
+#open-and-close:focus date { color: white !important; }
+
+#jamie-xx:hover,
+#jamie-xx:focus {
+  background-image: url('/img/jamiexx-alt.gif');
+  background-position: right center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+#custom-easing-with-sass:hover,
+#custom-easing-with-sass:focus {
+  background-image: url('/img/spring.gif');
+  background-position: center 40%;
+  background-size: 100%;
+}
+
+#squiggle:hover,
+#squiggle:focus {
+  background-image: url('/img/squiggle.gif');
+  background-position: center center;
+  background-size: 100%;
+  color: white;
+}
+#squiggle:hover date,
+#squiggle:focus date { color: white !important; }
+
+#vector-field:hover,
+#vector-field:focus {
+  background-image: url('/img/vector-field.gif');
+  background-position: center center;
+  background-size: 100%;
+  color: white;
+}
+#vector-field:hover date,
+#vector-field:focus date { color: white !important; }
+
+#the-core:hover,
+#the-core:focus {
+  background-image: url('/img/core.gif');
+  background-position: center 35%;
+  background-size: 100%;
+  color: white;
+}
+#the-core:hover date,
+#the-core:focus date { color: white !important; }
+
+#locator:hover,
+#locator:focus {
+  background-image: url('/img/hexagon.gif');
+  background-position: center center;
+  background-size: 100%;
+  color: #001B44;
+}
+#locator:hover date,
+#locator:focus date { color: #001B44 !important; }
+
+#react-svg:hover,
+#react-svg:focus {
+  background-image: url('/img/fermat-point.gif');
+  background-position: center 25%;
+  background-size: 100%;
+}
+
+#triangles:hover,
+#triangles:focus {
+  background-image: url('/img/trails.gif');
+  background-position: center center;
+  background-size: 100%;
+  color: white;
+}
+#triangles:hover date,
+#triangles:focus date { color: white !important; }
+
+#truncation:hover,
+#truncation:focus {
+  background-image: url('/img/truncation.gif');
+  background-position: center 60%;
+  background-size: 100%;
+  color: white;
+}
+#truncation:hover date,
+#truncation:focus date { color: white !important; }
+
+#parallax:hover,
+#parallax:focus {
+  background-image: url('/img/parallax.gif');
+  background-size: 175%;
+  background-position: center 40%;
+  color: white;
+}
+#parallax:hover date,
+#parallax:focus date { color: white !important; }
+
+#chillwave:hover,
+#chillwave:focus {
+  background-image: url('/img/chillwave-alt.gif');
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+#oam:hover,
+#oam:focus {
+  background-image: url('/img/oam-alt.gif');
+  background-position: center center;
+  background-size: 100%;
+}
+
+#flattening-deep-hierarchies-of-components:hover,
+#flattening-deep-hierarchies-of-components:focus {
+  background-color: #231F20;
+  background-image: url('/img/splash.gif');
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  color: white;
+}
+#flattening-deep-hierarchies-of-components:hover date,
+#flattening-deep-hierarchies-of-components:focus date { color: white !important; }
+
+#touch-and-mouse-together:hover,
+#touch-and-mouse-together:focus {
+  background-image: url('/img/triangleninja.gif');
+  background-position: center center;
+  background-size: 100%;
+  color: white;
+}
+#touch-and-mouse-together:hover date,
+#touch-and-mouse-together:focus date { color: white !important; }
+
+
+#shrinking-header-footer:hover,
+#shrinking-header-footer:focus {
+  background-image: url('/img/springytriangles.gif');
+  background-size: 300%;
+  background-position: center center;
+  color: white;
+}
+#shrinking-header-footer:hover date,
+#shrinking-header-footer:focus date { color: white !important; }

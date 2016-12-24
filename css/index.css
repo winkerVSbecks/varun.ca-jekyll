@@ -1,0 +1,26 @@
+---
+---
+
+@import 'tachyons.css';
+@import 'syntax.css';
+@import 'i.css';
+@import 'posts.css';
+@import 'owl.css';
+
+h1, h2, h3, h4, h5, h6,
+.system-sans {
+  font-family: -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+  'avenir next', avenir, /* MacOS and iOS */
+  'Segoe UI', /* Windows */
+  'lucida grande', /* Older MacOS */
+  'helvetica neue', helvetica, /* Older MacOS */
+  'Fira Sans', /* Firefox OS */
+  roboto, noto, /* Google stuff */
+  'Droid Sans', /* Old Google stuff */
+  cantarell, oxygen, ubuntu, /* Linux stuff */
+  'franklin gothic medium', 'century gothic', /* Windows stuff */
+  'Liberation Sans', /* Linux */
+  sans-serif; /* Everything else */
+}
+::-moz-selection { background: #ededff; }
+::selection { background: #ededff; }

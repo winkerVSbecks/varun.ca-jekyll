@@ -97,13 +97,15 @@ title: Varun Vachhar
   {% include footer.html class=" ph3" %}
 </div>
 
+<script src="{{ '/js/jquery.min.js' | absolute_url }}"></script>
+<script src="{{ '/js/owl.carousel.js' | absolute_url }}"></script>
 <script>
   window.onload = function() {
     var t = new Audio('https://www.nameshouts.com/libs/media/varun_hi.mp3');
     document.querySelector('.vocalizer')
       .addEventListener('click', function() { t.play() });
 
-    var owl = $('.owl-carousel')
+    var owl = $('.owl-carousel');
 
     owl.owlCarousel({
       stagePadding: 64,
@@ -117,5 +119,3 @@ title: Varun Vachhar
     $('#projects-prev').click(function() { owl.trigger('prev.owl.carousel'); });
   };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.js" /></script>
