@@ -21,6 +21,7 @@ title: Writing
           title="{{ post.title }}"
           id="{{ post.url | slugify }}"
           class="link db pv3 hide-child relative pl3 dark-gray">
+          <div class="absolute absolute--fill"></div>
           <date class="f6 gray db mb1" datetime="{{ post.date }}">
             {% include date.html date=post.date %}
           </date>

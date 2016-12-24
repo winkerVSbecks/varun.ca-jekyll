@@ -49,13 +49,17 @@
 
     return t;
   }(document, "script", "twitter-wjs"));</script>
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
   <script>
-    $('h2,h3,h4,h5,h6').filter('[id]').each(function () {
-      $(this).html('<a href="#'+$(this).attr('id')+'" class="link" style="color: inherit;">' + $(this).text() + '</a>');
+    const headingQuery = 'h2[id],h3[id],h4[id],h5[id],h6[id]';
+    const headings = document.querySelectorAll(headingQuery);
+    [ ...headings].forEach(function(heading) {
+      heading.innerHTML = `
+        <a href="#${ heading.id }"
+          class="link"
+          style="color: inherit;">
+          ${ heading.innerText }
+        </a>`;
+        // [...document.querySelectorAll('h2[id],h3[id],h4[id],h5[id],h6[id]')].forEach((h) => h.innerHTML = `<a href="#${ h.id }">${ h.innerText }</a>`
     });
   </script>
 </body>
