@@ -16,19 +16,7 @@ title: Writing
   <div class="bb b--light-gray bw2 w3 mv5"></div>
   <ul class="list pl0">
     {% for post in site.posts %}
-      <li class="nl3 nr3">
-        <a href="{{ post.url | absolute_url }}"
-          title="{{ post.title }}"
-          id="{{ post.url | slugify }}"
-          class="link db pv3 hide-child relative pl3 dark-gray z-0 {% if post.style == 'dark' %}hover-white{% endif %}">
-          <div class="absolute absolute--fill child cover z--1"
-            style="background-image: url('{{ post.bgImage }}'); background-position: {{ post.bgPosition }}">
-          </div>
-          <date class="f6 gray db mb1" datetime="{{ post.date }}">
-            {% include writing/date.html date=post.date %}
-          </date>
-          <span class="f3 f2-ns">{{ post.title }}</span>
-        </a>
+      {% include writing/post-link.html post=post %}
       </li>
     {% endfor %}
   </ul>
@@ -37,4 +25,3 @@ title: Writing
 <div class="mw7 center ph3">
   {% include footer.html %}
 </div>
-{% include google-analytics.html %}

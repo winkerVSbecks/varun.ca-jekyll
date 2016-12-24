@@ -5,6 +5,9 @@ body {
 
 .z--1 { z-index: -1; }
 
+.hover-white-child:hover *,
+.hover-white-child:focus * { color: white; }
+
 .primary { color: #4e4bec; }
 .b--primary { border-color: #4e4bec; }
 .bg-primary { background-color: #4e4bec; }

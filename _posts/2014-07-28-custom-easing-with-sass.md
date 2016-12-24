@@ -3,6 +3,8 @@ layout: post
 title: Custom Easing with Sass
 citation: patakk.tumblr.com
 citation-link: http://patakk.tumblr.com/post/88602945835/heres-a-simple-function-you-can-use-for-easing
+bgImage: /img/spring.gif
+bgPosition: center 40%
 ---
 
 [patakk](http://patakk.tumblr.com/) is an insanely talented GIF artist and on his tumblr blog he shared this simple yet amazing easing function:

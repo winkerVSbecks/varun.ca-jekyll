@@ -3,6 +3,8 @@ layout: post
 title: Vector Field
 demo: http://winkervsbecks.github.io/material-vector-field
 source: https://github.com/winkerVSbecks/material-vector-field
+bgImage: /img/vector-field.gif
+style: dark
 ---
 
 <p data-height="268" data-theme-id="7569" data-slug-hash="GCulK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/winkerVSbecks/pen/GCulK/'>Vector Field</a> by Varun Vachhar (<a href='http://codepen.io/winkerVSbecks'>@winkerVSbecks</a>) on <a href='http://codepen.io'>CodePen</a>.</p>

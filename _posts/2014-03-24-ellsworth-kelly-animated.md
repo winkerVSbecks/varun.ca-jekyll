@@ -3,6 +3,8 @@ layout: post
 title: Ellsworth Kelly Animated
 source: https://github.com/winkerVSbecks/ellsworthKellyAnimated
 demo: http://winkervsbecks.github.io/ellsworthKellyAnimated
+bgImage: /img/orange.gif
+bgPosition: center 20%
 ---
 
 ![](/img/orange.gif)

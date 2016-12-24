@@ -3,6 +3,9 @@ layout: post
 title: Truncation
 demo: http://winkervsbecks.github.io/truncation
 source: https://github.com/winkerVSbecks/truncation
+bgImage: /img/truncation.gif
+bgPosition: center 60%
+style: dark
 ---
 
 ![](/img/truncation.gif)

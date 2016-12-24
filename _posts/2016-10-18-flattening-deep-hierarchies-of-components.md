@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Flattening Deep Hierarchies of Components
+bgImage: /img/splash.gif
+bgPosition: center 75%
+bgSize: 400px 300px
+style: dark
 ---
 
 Components are an awesome tool for building interfaces. They allow you to break down the UI into distinct reusable elements. These can then be composed to build complex applications in a more sustainable way.

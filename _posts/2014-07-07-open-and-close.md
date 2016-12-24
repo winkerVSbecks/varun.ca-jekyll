@@ -3,6 +3,8 @@ layout: post
 title: Open & Close
 citation: Open & Close by CreativeDash
 citation-link: https://dribbble.com/shots/1623679-Open-Close
+bgImage: /img/open-close.gif
+style: dark
 ---
 
 <p data-height="368" data-theme-id="7569" data-slug-hash="mpjkd" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/winkerVSbecks/pen/mpjkd/'>Burger to Cross</a> by Varun Vachhar (<a href='http://codepen.io/winkerVSbecks'>@winkerVSbecks</a>) on <a href='http://codepen.io'>CodePen</a>.</p>

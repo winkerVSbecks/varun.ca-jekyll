@@ -3,6 +3,7 @@ layout: post
 title: Chillwave
 demo: http://codepen.io/winkerVSbecks/full/EVJGVj
 source: http://codepen.io/winkerVSbecks/pen/EVJGVj
+bgImage: /img/chillwave-alt.gif
 ---
 
 <p data-height="300"
