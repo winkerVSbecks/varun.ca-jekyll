@@ -6,7 +6,8 @@ source: https://github.com/winkerVSbecks/angularWebglDirective
 citation: original three.js demo
 citation-link: http://threejs.org/examples/#webgl_geometry_colors
 style: dark
-bg: /img/webgl.gif
+bgImage: /img/webgl.gif
+bgPosition: center center
 ---
 
 ![angularJS webGL Directive](/img/angularWebGL.png)

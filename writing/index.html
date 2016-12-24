@@ -20,8 +20,10 @@ title: Writing
         <a href="{{ post.url | absolute_url }}"
           title="{{ post.title }}"
           id="{{ post.url | slugify }}"
-          class="link db pv3 hide-child relative pl3 dark-gray">
-          <div class="absolute absolute--fill"></div>
+          class="link db pv3 hide-child relative pl3 dark-gray z-0 {% if post.style == 'dark' %}hover-white{% endif %}">
+          <div class="absolute absolute--fill child cover z--1"
+            style="background-image: url('{{ post.bgImage }}'); background-position: {{ post.bgPosition }}">
+          </div>
           <date class="f6 gray db mb1" datetime="{{ post.date }}">
             {% include date.html date=post.date %}
           </date>
