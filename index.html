@@ -76,46 +76,23 @@ title: Varun Vachhar
   <section class="mb6">
     <h2 class="mt0 f4 mh3">Projects</h2>
 
-    <!-- <div class="overflow-x-scroll nowrap"> -->
-    <div class="flex items-stretch pl3">
-      <div class="owl-carousel flex-auto">
-        {% for project in site.data.projects %}
-          {% include about/card.html
-            img=project.img
-            title=project.name
-            link=project.link
-          %}
-        {% endfor %}
-      </div>
-      <div class="w3 w4-ns f3 pointer dim flex items-center justify-center dn flex-ns"
-        id="projects-next">
-        {% include icons/icon.html type="chevron-right" %}
-      </div>
+    <div class="overflow-x-scroll mh3 nowrap">
+      {% for project in site.data.projects %}
+        {% include about/card.html
+          img=project.img
+          title=project.name
+          link=project.link
+        %}
+      {% endfor %}
     </div>
   </section>
 
   {% include footer.html class=" ph3" %}
 </div>
-
-<script src="{{ '/js/jquery.min.js' | absolute_url }}"></script>
-<script src="{{ '/js/owl.carousel.js' | absolute_url }}"></script>
 <script>
   window.onload = function() {
     var t = new Audio('https://www.nameshouts.com/libs/media/varun_hi.mp3');
     document.querySelector('.vocalizer')
       .addEventListener('click', function() { t.play() });
-
-    var owl = $('.owl-carousel');
-
-    owl.owlCarousel({
-      stagePadding: 64,
-      loop: true,
-      autoWidth: true,
-      dots: false,
-      nav: false
-    });
-
-    $('#projects-next').click(function() { owl.trigger('next.owl.carousel'); });
-    $('#projects-prev').click(function() { owl.trigger('prev.owl.carousel'); });
   };
 </script>
