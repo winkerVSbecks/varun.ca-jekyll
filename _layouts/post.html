@@ -1,11 +1,11 @@
 {% include head.html %}
 <body>
-  {% include nav-post.html %}
+  {% include nav.html %}
 
   <article class="mw7 center ph3 mv6 dark-gray">
     <header class="system-sans mb6">
       <date class="f6 gray" datetime="{{ page.date }}">
-        {% include date.html date=page.date %}
+        {% include writing/date.html date=page.date %}
       </date>
       <h1 class="f3 f2-m f1-ns mt1">
         {{ page.title }}
@@ -28,7 +28,7 @@
   </article>
 
   <div class="mw7 center ph3">
-    {% include related-posts.html %}
+    {% include writing/related-posts.html %}
     {% include footer.html %}
   </div>
   {% include google-analytics.html %}

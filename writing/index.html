@@ -3,7 +3,7 @@ layout: default
 title: Writing
 ---
 
-{% include nav-post.html %}
+{% include nav.html %}
 <article class="mw7 center ph3 mv6 dark-gray">
   <header class="system-sans">
     <h1 class="f3 f2-m f1-ns ma0">
@@ -25,7 +25,7 @@ title: Writing
             style="background-image: url('{{ post.bgImage }}'); background-position: {{ post.bgPosition }}">
           </div>
           <date class="f6 gray db mb1" datetime="{{ post.date }}">
-            {% include date.html date=post.date %}
+            {% include writing/date.html date=post.date %}
           </date>
           <span class="f3 f2-ns">{{ post.title }}</span>
         </a>

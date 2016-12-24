@@ -2,7 +2,7 @@
 layout: default
 title: Varun Vachhar
 ---
-{% include icon-system.html %}
+{% include icons/icon-system.html %}
 <div class="mw9 center ph5-l f5 lh-copy dark-gray sans-serif">
 
   <header class="mt6 mb5 ph3">
@@ -26,27 +26,27 @@ title: Varun Vachhar
   </section>
 
   <nav class="measure-wide mb6">
-    <a class="b ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
+    <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
       title="varun vachhar on twitter"
       href="http://twitter.com/winkerVSbecks">
       Twitter
     </a>
-    <a class="b ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
+    <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
       title="varun vachhar on github"
       href="http://github.com/winkerVSbecks">
       Github
     </a>
-    <a class="b ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
+    <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
       title="varun vachhar on CodePen"
       href="http://codepen.io/winkerVSbecks">
       CodePen
     </a>
-    <a class="b ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
+    <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
       title="varun vachhar on dribbble"
       href="http://dribbble.com/winkerVSbecks">
       Dribbble
     </a>
-    <a class="b ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
+    <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
       title="email varun vachhar"
       href="mailto:varunvachhar@gmail.com">
       Email
@@ -59,7 +59,7 @@ title: Varun Vachhar
         class="db link f4 bb pv3 dark-gray hide-move-child flex items-center"
         href="{{ 'writing' | absolute_url }}">
         Recent Posts
-        {% include icon.html type="arrow-right" class="child ml1" %}
+        {% include icons/icon.html type="arrow-right" class="child ml1" %}
       </a>
     </h2>
 
@@ -80,7 +80,7 @@ title: Varun Vachhar
     <div class="flex items-stretch pl3">
       <div class="owl-carousel flex-auto">
         {% for project in site.data.projects %}
-          {% include card.html
+          {% include about/card.html
             img=project.img
             title=project.name
             link=project.link
@@ -89,7 +89,7 @@ title: Varun Vachhar
       </div>
       <div class="w3 w4-ns f3 pointer dim flex items-center justify-center dn flex-ns"
         id="projects-next">
-        {% include icon.html type="chevron-right" %}
+        {% include icons/icon.html type="chevron-right" %}
       </div>
     </div>
   </section>

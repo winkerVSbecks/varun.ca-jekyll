@@ -45,4 +45,4 @@ float ease(float p, float g){
 <p data-height="500" data-theme-id="7569" data-slug-hash="Cihkr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/winkerVSbecks/pen/Cihkr/'>Sass Mixin for Generating a Custom Easing Function</a> by Varun Vachhar (<a href='http://codepen.io/winkerVSbecks'>@winkerVSbecks</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-{% include citation.html %}
+{% include writing/citation.html %}

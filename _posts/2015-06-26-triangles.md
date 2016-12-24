@@ -7,7 +7,7 @@ source: https://github.com/winkerVSbecks/triangle.life
 
 ![](/img/triangle-life.gif)
 
-{% include demo-source.html %}
+{% include writing/demo-source.html %}
 
 I love triangles!
 

@@ -7,7 +7,7 @@ source: https://github.com/winkerVSbecks/truncation
 
 ![](/img/truncation.gif)
 
-{% include demo-source.html %}
+{% include writing/demo-source.html %}
 
 I recently discovered the idea of truncation. It is a fascinating concept. You rip apart a vertex to create a new facet and in turn more complex geometry. This pen by Ana Tudor shows the truncation of a tetrahedron:
 

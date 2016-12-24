@@ -8,7 +8,7 @@ source: https://github.com/winkerVSbecks/material-vector-field
 <p data-height="268" data-theme-id="7569" data-slug-hash="GCulK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/winkerVSbecks/pen/GCulK/'>Vector Field</a> by Varun Vachhar (<a href='http://codepen.io/winkerVSbecks'>@winkerVSbecks</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-{% include demo-source.html %}
+{% include writing/demo-source.html %}
 
 While going through the Google  [Material Design handbook](https://static.googleusercontent.com/media/www.google.com/en//design/material-design.pdf) the illustration in the *Users Initiate Change* caught my eye. Around the same time  [p5js](http://p5js.org/reference/) was announced, so I figured it would be fun replicating this with Canvas.
 
