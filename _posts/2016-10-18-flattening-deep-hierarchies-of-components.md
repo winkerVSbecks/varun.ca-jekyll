@@ -4,6 +4,7 @@ title: Flattening Deep Hierarchies of Components
 bgImage: /img/splash.gif
 bgPosition: center 75%
 bgSize: 400px 300px
+bgColor: '#231F20'
 style: dark
 ---
 
