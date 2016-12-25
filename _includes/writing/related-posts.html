@@ -1,7 +1,7 @@
 <aside class="pv4 dark-gray bt bw1 b--light-gray">
   <h1 class="f4">Related Posts</h1>
   <ul class="pl4">
-    {% for post in site.related_posts limit: 5 %}
+    {% for post in site.related_posts limit: 3 %}
     <li>
       <a href="{{ post.url | absolute_url }}"
         class="link dim near-black db f5 f4-ns pv2"

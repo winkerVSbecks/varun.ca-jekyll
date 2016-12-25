@@ -22,7 +22,7 @@ title: Varun Vachhar
 
   <section class="mb4 ph3">
     <h2 class="ma0 f4">About</h2>
-    <p class="mt0 measure-wide">Originally from New Delhi, India. I am a developer with a strong focus on design, interactivity and animation. I currently live in Toronto, Canada and work as a JavaScript developer at <a class="link dim primary" href="https://rangle.io/">Rangle.io</a>. In my spare time, I like to experiment with creative coding, making playful experiences for the web and <a class="link dim primary" href="http://triangle.life">triangles</a>.</p>
+    <p class="mt0 measure-wide">Originally from New Delhi, India. I am a developer with a strong focus on design, interactivity and animation. I currently live in Toronto, Canada and work as a developer at <a class="link dim primary" href="https://rangle.io/">Rangle.io</a>. In my spare time, I like to experiment with creative coding, making playful experiences for the web and <a class="link dim primary" href="http://triangle.life">triangles</a>.</p>
   </section>
 
   <nav class="measure-wide mb6">
@@ -37,6 +37,11 @@ title: Varun Vachhar
       Github
     </a>
     <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
+      title="{{ site.writing_desc }}"
+      href="{{ 'writing' | absolute_url }}">
+      Writing
+    </a>
+    <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
       title="varun vachhar on CodePen"
       href="http://codepen.io/winkerVSbecks">
       CodePen
@@ -46,16 +51,11 @@ title: Varun Vachhar
       href="http://dribbble.com/winkerVSbecks">
       Dribbble
     </a>
-    <a class="fw5 ph3 pv2 pv3-ns flex-auto link dark-gray dim dib"
-      title="email varun vachhar"
-      href="mailto:varunvachhar@gmail.com">
-      Email
-    </a>
   </nav>
 
   <section class="measure-wide mh3 mb6">
     <h2 class="ma0">
-      <a title="writing about experiments in JavaScript, CSS and reactive animations."
+      <a title="{{ site.writing_desc }}"
         class="db link f4 bb pv3 dark-gray hide-move-child flex items-center"
         href="{{ 'writing' | absolute_url }}">
         Recent Posts
@@ -64,7 +64,7 @@ title: Varun Vachhar
     </h2>
 
     {% for post in site.posts limit:3 %}
-      <a class="db f4 link dark-gray pv3 bb"
+      <a class="db f4 link dark-gray pv3 bb dim"
         href="{{ post.url | absolute_url }}"
         title="{{ post.title }}"
         id="{{ post.url | slugify }}">
@@ -74,7 +74,14 @@ title: Varun Vachhar
   </section>
 
   <section class="mb6">
-    <h2 class="mt0 f4 mh3">Projects</h2>
+    <h2 class="ma0 mh3">
+      <a title="{{ site.writing_desc }}"
+        class="db link f4 pv3 dark-gray hide-move-child flex items-center"
+        href="{{ 'projects' | absolute_url }}">
+        Projects
+        {% include icons/icon.html type="arrow-right" class="child ml1" %}
+      </a>
+    </h2>
 
     <div class="overflow-x-scroll mh3 nowrap">
       {% for project in site.data.projects %}
@@ -82,6 +89,7 @@ title: Varun Vachhar
           img=project.img
           title=project.name
           link=project.link
+          class='mr4'
         %}
       {% endfor %}
     </div>
