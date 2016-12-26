@@ -7,6 +7,6 @@ module.exports = {
     'cssnano',
   ],
   input: '_css/index.css',
-  dir: '_includes',
+  output: '_includes/index.css',
   "local-plugins": true,
 };

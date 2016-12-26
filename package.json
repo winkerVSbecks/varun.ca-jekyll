@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "css": "postcss -c postcss.config.js",
+    "css": "postcss -c postcss.config.js --log",
     "css:watch": "postcss -c postcss.config.js -w",
+    "prestart": "npm run css",
     "start": "bundle exec jekyll serve --port 3000"
   },
   "repository": {
