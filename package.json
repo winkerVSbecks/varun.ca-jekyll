@@ -16,7 +16,6 @@
   "author": "Varun Vachhar <varunvachhar@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^6.6.0",
     "cssnano": "^3.9.1",
     "imagemin": "^5.2.2",
     "postcss-cli": "^2.6.0",

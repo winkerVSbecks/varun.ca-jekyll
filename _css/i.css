@@ -10,6 +10,25 @@
   "shades": ["#f8f8fe", "#ececfc", "#dedefb", "#cfcff9", "#bfbef8", "#adabf6", "#9796f3", "#7d7bf1", "#5956ed", "#312f96"]
 }*/
 
+h1, h2, h3, h4, h5, h6,
+.system-sans {
+  font-family: -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+  'avenir next', avenir, /* MacOS and iOS */
+  'Segoe UI', /* Windows */
+  'lucida grande', /* Older MacOS */
+  'helvetica neue', helvetica, /* Older MacOS */
+  'Fira Sans', /* Firefox OS */
+  roboto, noto, /* Google stuff */
+  'Droid Sans', /* Old Google stuff */
+  cantarell, oxygen, ubuntu, /* Linux stuff */
+  'franklin gothic medium', 'century gothic', /* Windows stuff */
+  'Liberation Sans', /* Linux */
+  sans-serif; /* Everything else */
+}
+
+::-moz-selection { background: #ededff; }
+::selection { background: #ededff; }
+
 .z--1 { z-index: -1; }
 
 .hover-white-child:hover *,
