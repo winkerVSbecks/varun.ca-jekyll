@@ -1,0 +1,22 @@
+{
+  "name": "varun.ca",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "css": "postcss -c postcss.config.js",
+    "css:watch": "postcss -c postcss.config.js -w",
+    "start": "bundle exec jekyll serve --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winkerVSbecks/varun.ca.git"
+  },
+  "author": "Varun Vachhar <varunvachhar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.6.0",
+    "cssnano": "^3.9.1",
+    "postcss-cli": "^2.6.0",
+    "postcss-import": "^9.0.0"
+  }
+}
