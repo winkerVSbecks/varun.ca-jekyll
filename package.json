@@ -5,6 +5,7 @@
   "scripts": {
     "css": "postcss -c postcss.config.js --log",
     "css:watch": "postcss -c postcss.config.js -w",
+    "imagemin": "node imagemin.js",
     "prestart": "npm run css",
     "start": "bundle exec jekyll serve --port 3000"
   },
@@ -17,6 +18,7 @@
   "dependencies": {
     "autoprefixer": "^6.6.0",
     "cssnano": "^3.9.1",
+    "imagemin": "^5.2.2",
     "postcss-cli": "^2.6.0",
     "postcss-import": "^9.0.0"
   }

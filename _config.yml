@@ -24,7 +24,12 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-
+  - node_modules
+  - README.md
+  - yarn.lock
+  - postcss.config.js
+  - imagemin.js
+  - package.json
 
 # Custom vars
 version: 1.0.0
