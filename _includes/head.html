@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
     {% if page.title %}
       {{ page.title }}
@@ -8,11 +9,9 @@
       {{ site.title }} – {{ site.description }}
     {% endif %}
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
   <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author }}">
-  <link rel="canonical" href="{{ page.url | replace: 'index.html','' | absolute_url }}">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="{{ 'favicon.ico' | absolute_url }}">
+  <link rel="author" href="humans.txt">
+  {% include icons.html %}
   <style>{% include index.css %}</style>
 </head>
