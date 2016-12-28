@@ -1,58 +1,82 @@
 [
   {
-    name: "jamieXX"
+    name: "Weight Selector",
+    link: "http://codepen.io/winkerVSbecks/pen/amPaVz",
+    img: "/img/weight-selector.gif",
   },
   {
-    name: "jupiter"
+    name: "Joystick",
+    link: "https://winkervsbecks.github.io/joystick",
+    img: "/img/joystick.gif",
   },
   {
-    name: "vector-field",
-    repo: "https://github.com/winkerVSbecks/material-vector-field"
+    name: "Splash",
+    link: "https://winkervsbecks.github.io/splash",
+    img: "/img/splash.gif",
+  },
+  {
+    name: "Touch ID",
+    link: "http://codepen.io/winkerVSbecks/full/vGojNb/",
+    img: "/img/touch-id.gif",
+  },
+  {
+    name: "Chillwave",
+    link: "http://winkervsbecks.github.io/chillwave",
+    img: "/img/chillwave-alt.gif",
+  },
+  {
+    name: "Pressed",
+    link: "http://codepen.io/winkerVSbecks/pen/PZEvQd",
+    img: "/img/pressed.gif",
+  },
+  {
+    name: "Pizza Theorem",
+    link: "http://winkervsbecks.github.io/pizza-theorem",
+    img: "/img/pizza-theorem.gif",
+  },
+  {
+    name: "Polygon Slicer",
+    link: "http://winkervsbecks.github.io/polygon-slicer",
+    img: "/img/polygon-slicer.gif",
+  },
+  {
+    name: "Hooke’s Law",
+    link: "http://winkervsbecks.github.io/hookes-law",
+    img: "/img/spring.gif",
+  },
+  {
+    name: "Truncation",
+    link: "https://github.com/winkerVSbecks/truncation",
+    img: "/img/truncation.gif",
+  },
+  {
+    name: "Fermat Point",
+    link: "http://winkervsbecks.github.io/fermat-point",
+    img: "/img/fermat-point.gif",
+  },
+  {
+    name: "चतुर्पाश्वीय",
+    link: "http://winkervsbecks.github.io/react-tetrahedrons",
+    img: "/img/squiggle.gif",
   },
   {
     name: "The Core",
-    repo: "https://github.com/winkerVSbecks/the-core"
+    link: "http://winkervsbecks.github.io/the-core",
+    img: "/img/core.gif",
   },
   {
-    name: "react-tetrahedrons",
-    repo: "https://github.com/winkerVSbecks/react-tetrahedrons"
+    name: "Vector Field",
+    link: "http://winkervsbecks.github.io/material-vector-field/",
+    img: "/img/vector-field.gif",
   },
   {
-    name: "truncation",
-    repo: "https://github.com/winkerVSbecks/truncation"
+    name: "Jupiter",
+    link: "http://winkervsbecks.github.io/jupiter",
+    img: "/img/squiggle.gif",
   },
   {
-    name: "The-Receipt-Site",
-    repo: "https://github.com/winkerVSbecks/The-Receipt-Site"
+    name: "Jamie XX",
+    link: "http://winkervsbecks.github.io/gems",
+    img: "/img/jamiexx.gif",
   },
-  {
-    repo: "https://github.com/winkerVSbecks/hookes-law"
-  },
-  {
-    repo: "https://github.com/winkerVSbecks/chillwave"
-  },
-  {
-    repo: "https://github.com/winkerVSbecks/pizza-theorem"
-  },
-  {
-    repo: "https://github.com/winkerVSbecks/fermat-point"
-  },
-  {
-    repo: "https://github.com/winkerVSbecks/polygon-slicer"
-  },
-  {
-    repo: "https://github.com/winkerVSbecks/touch-id"
-  },
-  {
-    repo: "https://github.com/winkerVSbecks/splash"
-  },
-  {
-    repo: "https://winkervsbecks.github.io/joystick/"
-  },
-  {
-    link: "http://codepen.io/winkerVSbecks/pen/amPaVz"
-  },
-  {
-    link: "http://codepen.io/winkerVSbecks/pen/PZEvQd"
-  }
 ]

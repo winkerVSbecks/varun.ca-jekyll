@@ -5,7 +5,7 @@
   "scripts": {
     "css": "postcss -c postcss.config.js --log",
     "css:watch": "postcss -c postcss.config.js -w",
-    "imagemin": "node imagemin.js",
+    "imagemin": "rm -rf img && node imagemin.js",
     "prestart": "npm run css",
     "start": "bundle exec jekyll serve --port 3000"
   },
