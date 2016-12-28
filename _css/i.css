@@ -29,6 +29,8 @@ h1, h2, h3, h4, h5, h6,
 ::-moz-selection { background: #ededff; }
 ::selection { background: #ededff; }
 
+.momentum-scroll { -webkit-overflow-scrolling: touch; }
+
 .z--1 { z-index: -1; }
 
 .hover-white-child:hover *,
@@ -41,7 +43,6 @@ h1, h2, h3, h4, h5, h6,
 .secondary { color: #ececfd; }
 .b--secondary { border-color: #ececfd; }
 .bg-secondary { background-color: #ececfd; }
-
 
 .hide-move-child .child {
   opacity: 0;
