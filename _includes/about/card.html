@@ -3,7 +3,7 @@
   title="{{ include.title }}">
   <div class="aspect-ratio aspect-ratio--4x3">
     <div class="aspect-ratio--object cover bg-center dt"
-      style="background-image: url({{ include.img }});">
+      style="background-image: url({{ include.img | absolute_url }});">
       <span class="dark-gray b dtc v-mid w-100 h-100 child bg-white-90 tc">
         {{ include.title }}
       </span>
