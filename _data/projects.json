@@ -37,12 +37,6 @@
     img: "/img/swipe-li.gif"
   },
   {
-    name: "Moti",
-    repo: "https://github.com/winkerVSbecks/gems",
-    link: "http://moti.ph",
-    img: "/img/moti.jpg"
-  },
-  {
     name: "Homesick",
     link: "/projects/homesick.html",
     img: "/img/homesick.png"
@@ -51,6 +45,12 @@
     name: "Tethered Motion",
     link: "/projects/tethered-motion.html",
     img: "/img/wave.gif"
+  },
+  {
+    name: "Moti",
+    repo: "https://github.com/winkerVSbecks/gems",
+    link: "http://moti.ph",
+    img: "/img/moti.jpg"
   },
   {
     name: "The Receipt Site",

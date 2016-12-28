@@ -7,7 +7,7 @@ style: dark
 
 If you have built a web app in the past few years, you've probably had to deal with touch events. In many cases this was limited to handling tap and removing that pesky  [300ms delay](https://developers.google.com/web/updates/2013/12/300ms-tap-delay-gone-away). However with touch devices becoming more powerful, we now have to implement more complex gestures— gestures that work for both mouse and touch.
 
-<!--more-->
+
 
 {: .ba .b--secondary center }
 ![chat-head demo](/img/chat-head-demo.gif)

@@ -83,7 +83,7 @@ title: Varun Vachhar
     </h2>
 
     <div class="overflow-x-scroll momentum-scroll mh3 nowrap">
-      {% for project in site.data.projects %}
+      {% for project in site.data.projects limit: 8 %}
         {% include about/card.html
           img=project.img
           title=project.name
@@ -91,6 +91,9 @@ title: Varun Vachhar
           class='mr4'
         %}
       {% endfor %}
+      {% include about/more.html
+        link='projects'
+      %}
     </div>
   </section>
 
@@ -105,7 +108,7 @@ title: Varun Vachhar
     </h2>
 
     <div class="overflow-x-scroll momentum-scroll mh3 nowrap">
-      {% for experiment in site.data.experiments %}
+      {% for experiment in site.data.experiments limit: 8 %}
         {% include about/card.html
           img=experiment.img
           title=experiment.name
@@ -113,11 +116,14 @@ title: Varun Vachhar
           class='mr4'
         %}
       {% endfor %}
+      {% include about/more.html
+        link='experiments'
+      %}
     </div>
   </section>
 
 
-  <section class="measure-wide mh3 mb6">
+  <section class="measure-wide mh3">
     <h2 class="ma0 db f4 bb pv3 dark-gray hide-move-child flex items-center">
       Talks
     </h2>

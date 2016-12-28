@@ -25,7 +25,7 @@ It has one job: display an image with a title. You might be tempted to build it 
 
 As the complexity of your app grows you might introduce other scenarios for this `Card` component. The card should now be able to display a caption or an icon with a click action?
 
-<!--more-->
+
 
 ![Card with other requirements such as caption and icon](/img/cards-with-other-requirements.png)
 

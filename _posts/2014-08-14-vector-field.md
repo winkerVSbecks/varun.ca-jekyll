@@ -14,7 +14,7 @@ style: dark
 
 While going through the Google  [Material Design handbook](https://static.googleusercontent.com/media/www.google.com/en//design/material-design.pdf) the illustration in the *Users Initiate Change* caught my eye. Around the same time  [p5js](http://p5js.org/reference/) was announced, so I figured it would be fun replicating this with Canvas.
 
-<!--more-->
+
 
 My first attempt was to build a grid of vectors and then rotate them towards the mouse location. The rotation would be scaled down based on the distance from the mouse location, i.e: `rotation = angle * scale(0, 1, 0, width-of-the-canvas)`. This gave an interesting result but, it wasn't quite the same spiral effect.
 

@@ -13,7 +13,7 @@ style: dark
 
 The  [Ionic Framework](http://ionicframework.com/) is an open source front-end framework for developing hybrid mobile apps with Cordova and AngularJS. I'm a big fan and use it a lot in my work at  [rangle.io](http://rangle.io)! We are a full-stack web and mobile app development consultancy.
 
-<!--more-->
+
 
 One of the apps we are currently developing has an infinite stream similar to Facebook. Therefore, we decided to mimic the iOS shrinking header UI, to give the user more screen space for actual content. Ionic has had a  [demo](http://codepen.io/ionic/pen/hIzFp) for this for quite some time. However, the shrinking behaviour is limited to the top of the scroll view.
 

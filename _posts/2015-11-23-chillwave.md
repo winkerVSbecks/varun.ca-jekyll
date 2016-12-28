@@ -22,7 +22,7 @@ A few days ago I came across this creative studio called  [This Also](http://thi
 
 I absolutely love this! First thing I did was *right click & inspect element* and was expecting to find an SVG with SMIL animation baked in. To my surprise it turned out to be a  [sprite](http://thisalso.com/img/global/chillwave.png) based animation with 24 frames. So, let’s recreate this with only SVG.
 
-<!--more-->
+
 
 ## Draw the Wave
 

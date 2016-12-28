@@ -10,7 +10,7 @@ github_username:  winkerVSbecks
 writing_desc: writing about JavaScript, CSS and reactive animations.
 
 # Post settings
-excerpt_separator: <!--more-->
+excerpt_separator: 
 permalink: /:title
 
 # Build settings

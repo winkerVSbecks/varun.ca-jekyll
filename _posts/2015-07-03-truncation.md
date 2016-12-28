@@ -14,7 +14,7 @@ style: dark
 
 I recently discovered the idea of truncation. It is a fascinating concept. You rip apart a vertex to create a new facet and in turn more complex geometry. This pen by Ana Tudor shows the truncation of a tetrahedron:
 
-<!--more-->
+
 
 <p data-height="400" data-theme-id="7569" data-slug-hash="ogeQNm" data-default-tab="result" data-user="thebabydino" class='codepen'></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
