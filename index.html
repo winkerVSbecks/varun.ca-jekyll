@@ -66,8 +66,7 @@ title: Varun Vachhar
     {% for post in site.posts limit:3 %}
       <a class="db f4 link dark-gray pv3 bb dim"
         href="{{ post.url | absolute_url }}"
-        title="{{ post.title }}"
-        id="{{ post.url | slugify }}">
+        title="{{ post.title }}">
         {{ post.title }}
       </a>
     {% endfor %}
@@ -93,6 +92,43 @@ title: Varun Vachhar
         %}
       {% endfor %}
     </div>
+  </section>
+
+  <section class="mb6">
+    <h2 class="ma0 mh3">
+      <a title="{{ site.writing_desc }}"
+        class="db link f4 pv3 dark-gray hide-move-child flex items-center"
+        href="{{ 'experiments' | absolute_url }}">
+        Experiments
+        {% include icons/icon.html type="arrow-right" class="child ml1" %}
+      </a>
+    </h2>
+
+    <div class="overflow-x-scroll mh3 nowrap">
+      {% for experiment in site.data.experiments %}
+        {% include about/card.html
+          img=experiment.img
+          title=experiment.name
+          link=experiment.link
+          class='mr4'
+        %}
+      {% endfor %}
+    </div>
+  </section>
+
+
+  <section class="measure-wide mh3 mb6">
+    <h2 class="ma0 db f4 bb pv3 dark-gray hide-move-child flex items-center">
+      Talks
+    </h2>
+
+    {% for talk in site.data.talks %}
+      <a class="db f4 link dark-gray pv3 bb dim"
+        href="{{ talk.url }}"
+        title="{{ talk.title }}">
+        {{ talk.title }}
+      </a>
+    {% endfor %}
   </section>
 
   {% include footer.html class=" ph3" %}
