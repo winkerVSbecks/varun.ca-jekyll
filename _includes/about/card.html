@@ -1,12 +1,16 @@
 <a class="dib w5 ba b--secondary pointer pa1 hide-child relative {{ include.class }}"
   href="{{ include.link }}"
   title="{{ include.title }}">
+
   <div class="aspect-ratio aspect-ratio--4x3">
-    <div class="aspect-ratio--object cover bg-center dt"
+    <div class="aspect-ratio aspect-ratio--object cover bg-center"
       style="background-image: url({{ include.img | absolute_url }});">
-      <span class="dark-gray b dtc v-mid w-100 h-100 child bg-white-90 tc">
+
+      <div class="dark-gray b w-100 h-100 child bg-white-90 flex items-center justify-center">
         {{ include.title }}
-      </span>
+      </div>
+
     </div>
   </div>
+
 </a>
