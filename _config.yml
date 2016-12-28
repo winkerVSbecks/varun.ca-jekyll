@@ -17,13 +17,6 @@ permalink: /:title
 markdown: kramdown
 theme: minima
 highlighter: rouge
-gems:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-minifier
-
-jekyll-minifier:
-  exclude: ['yarn.lock', 'postcss.config.js', 'imagemin.js', 'package.json']
 
 exclude:
   - Gemfile
