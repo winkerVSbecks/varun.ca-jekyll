@@ -10,8 +10,7 @@ github_username:  winkerVSbecks
 writing_desc: writing about JavaScript, CSS and reactive animations.
 
 # Post settings
-excerpt_separator: 
-permalink: /:title
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
