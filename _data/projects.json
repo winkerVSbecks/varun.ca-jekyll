@@ -1,5 +1,11 @@
 [
   {
+    name: "xvg",
+    link: "https://xvg.now.sh",
+    repo: "https://github.com/winkerVSbecks/xvg",
+    img: "/img/xvg.gif"
+  },
+  {
     name: "Gems",
     link: "http://winkervsbecks.github.io/gems",
     repo: "https://github.com/winkerVSbecks/gems",

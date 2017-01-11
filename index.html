@@ -82,18 +82,20 @@ title: Varun Vachhar
       </a>
     </h2>
 
-    <div class="overflow-x-scroll momentum-scroll mh3 nowrap">
-      {% for project in site.data.projects limit: 8 %}
-        {% include about/card.html
-          img=project.img
-          title=project.name
-          link=project.link
-          class='mr4'
+    <div class="relative mh3 lh-solid">
+      <div class="overflow-x-scroll momentum-scroll nowrap">
+        {% for project in site.data.projects limit: 8 %}
+          {% include about/card.html
+            img=project.img
+            title=project.name
+            link=project.link
+            class='mr4'
+          %}
+        {% endfor %}
+        {% include about/more.html
+          link='projects'
         %}
-      {% endfor %}
-      {% include about/more.html
-        link='projects'
-      %}
+      </div>
     </div>
   </section>
 
@@ -107,18 +109,21 @@ title: Varun Vachhar
       </a>
     </h2>
 
-    <div class="overflow-x-scroll momentum-scroll mh3 nowrap">
-      {% for experiment in site.data.experiments limit: 8 %}
-        {% include about/card.html
-          img=experiment.img
-          title=experiment.name
-          link=experiment.link
-          class='mr4'
+    <div class="relative mh3 lh-solid">
+      <div class="overflow-x-scroll momentum-scroll nowrap">
+        {% assign featuredExperiments = site.data.experiments | where: 'featured', true %}
+        {% for experiment in featuredExperiments limit: 8 %}
+          {% include about/card.html
+            img=experiment.img
+            title=experiment.name
+            link=experiment.link
+            class='mr4'
+          %}
+        {% endfor %}
+        {% include about/more.html
+          link='experiments'
         %}
-      {% endfor %}
-      {% include about/more.html
-        link='experiments'
-      %}
+      </div>
     </div>
   </section>
 
@@ -144,5 +149,10 @@ title: Varun Vachhar
     var t = new Audio('https://www.nameshouts.com/libs/media/varun_hi.mp3');
     document.querySelector('.js-vocalizer')
       .addEventListener('click', function() { t.play() });
+  };
+
+  var leftShadow = {
+    experiments: false,
+    projects: false,
   };
 </script>
