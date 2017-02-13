@@ -13,7 +13,7 @@ style: dark
 
 Much has been written about [SVG Icon Systems](https://css-tricks.com/svg-sprites-use-better-icon-fonts/) and why they are [amazing](http://jonibologna.com/svg-sprites-and-icon-systems-are-super/). In this post I want to share my workflow for creating a component based SVG icon system.
 
-The focus here is on front-end JavaScript frameworks such as React, Angular, Vue.js, etc. These frameworks allow us to split the UI into discrete reusable components. Which means we can create a generic icon component. And use the `type` property to render inline the appropriate icon.
+The focus here is on front-end JavaScript frameworks such as React, Angular, Vue.js, etc. These frameworks allow us to split the UI into discrete, reusable components. Which means we can create a generic icon component. And use the `type` property to render inline the appropriate icon.
 
 ```html
 <!-- React -->
@@ -26,15 +26,15 @@ The focus here is on front-end JavaScript frameworks such as React, Angular, Vue
 
 
 ## Prepare SVG Files
-Our starting point will be `.svg` files  – one per icon.  In most cases these will be generated using an app such as Illustrator or Sketch. Although you can also obtain them from an icon pack, for example: [Material Design icons](https://github.com/google/material-design-icons), [iconmonstr](http://iconmonstr.com/), [SVG Icons](http://svgicons.sparkk.fr/), etc.
+Our starting point will be `.svg` files  – one per icon.  In most cases these will be generated using an app such as Illustrator or Sketch, although you can also obtain them from an icon pack, for example: [Material Design icons](https://github.com/google/material-design-icons), [iconmonstr](http://iconmonstr.com/), [SVG Icons](http://svgicons.sparkk.fr/), etc.
 
 ![folder full of SVG icon files](/img/folder-of-icons.png)
 
-I like to start by running all the files through [GitHub - svg/svgo](https://github.com/svg/svgo) or [SVGOMG](https://jakearchibald.github.io/svgomg/). This not only optimizes the SVG but, also strips out any editor artifacts and tries to reduce it to a single `<path>`.
+I like to start by running all the files through [GitHub - svg/svgo](https://github.com/svg/svgo) or [SVGOMG](https://jakearchibald.github.io/svgomg/). This not only optimizes the SVG but also strips out any editor artifacts and tries to reduce it to a single `<path>`.
 
 Take a moment to visually check all your icon files. You might have to play with the SVGO settings, especially the precision setting, to ensure that the optimized version does not get distorted.
 
-Next we are going to make a couple of modification to all the `.svg` files.
+Next we are going to make a couple of modifications to all the `.svg` files.
 
 1. Ensure that all the icons use `viewBox` and remove any `width` or `height` attributes. You can configure SVGO to do this for you automatically. This will [make it easier](https://youtu.be/af4ZQJ14yu8?t=309) to control the size of the icon.
 
@@ -108,7 +108,7 @@ To do so:
 
 ## Icon Component
 
-Time to put everything together and build the icon component. Below is the React version of the component – the [Angular](https://github.com/winkerVSbecks/ng2-icon-system-demo/blob/master/src/app/icon/icon.component.ts) and [Vue.js](https://github.com/winkerVSbecks/vue-icon-system-demo/blob/master/src/components/Icon.vue) versions are quite similar. For the `<svg>` element I have set `display` to `inline-block` and `verticalAlign` to `middle`. I am using [tachyons](http://tachyons.io/) for styling here however, you can set those styles using any technique.
+Time to put everything together and build the icon component. Below is the React version of the component – the [Angular](https://github.com/winkerVSbecks/ng2-icon-system-demo/blob/master/src/app/icon/icon.component.ts) and [Vue.js](https://github.com/winkerVSbecks/vue-icon-system-demo/blob/master/src/components/Icon.vue) versions are quite similar. For the `<svg>` element I have set `display` to `inline-block` and `verticalAlign` to `middle`. I am using [tachyons](http://tachyons.io/) for styling here; however, you can set those styles using any technique.
 
 ```js
 import React from 'react';
@@ -125,13 +125,13 @@ const Icon = ({ type, className }) => (
 export default Icon;
 ```
 
-The `width` & `height` attributes are set to `1em` (adjust based on the aspect ratio of your icons). This will give us more flexibility to control the size of the icon.
+The `width` & `height` attributes are set to `1em`. If needed, adjust the values based on the aspect ratio of your icons. This will give us more flexibility to control the size of the icon.
 
 The component itself has two props:
 1. `type`: to pick which icon needs to be rendered.
 2. `className`: to allow us to add more CSS classes to `<svg>` element.
 
-So, the following will render a `cloud-with-snow` icon.
+The following will render a `cloud-with-snow` icon.
 
 ```html
 <Icon type="cloud-with-snow" />
@@ -149,7 +149,7 @@ We can control the colour of the icon by using the `font-color`. The following w
 
 We have two options for setting size of the icon:
 
-Using `font-size`. This works great when you are rendering the icon next to some kind of text. For example, in a paragraph or a button. Because we set the `width` & `height` attributes to `1em` the icon scales to match the font size. The following will render a blue `wind` icon that is [`1.25rem`](http://tachyons.io/docs/typography/scale) tall.
+Using `font-size`: this works great when you are rendering the icon next to some kind of text. For example, in a paragraph or a button. Because we set the `width` & `height` attributes to `1em` the icon scales to match the font size. The following will render a blue `wind` icon that is [`1.25rem`](http://tachyons.io/docs/typography/scale) tall.
 
 ```html
 <Icon type="wind" className="f4 blue" />
