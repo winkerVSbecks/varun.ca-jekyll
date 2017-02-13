@@ -33,6 +33,27 @@ h1, h2, h3, h4, h5, h6,
 
 .z--1 { z-index: -1; }
 
+.shadow--inset-right:after,
+.shadow--inset-left:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 1rem;
+  height: 100%;
+  z-index: 999;
+  opacity: 0.75;
+}
+
+.shadow--inset-right:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(244,244,244,0), #f4f4f4);
+}
+
+.shadow--inset-left:before {
+  left: 0;
+  background: linear-gradient(to right, #f4f4f4, rgba(244,244,244,0));
+}
+
 .hover-white-child:hover *,
 .hover-white-child:focus * { color: #fff; }
 
@@ -178,7 +199,8 @@ figure.highlight {
 }
 
 .nested p,
-.nested iframe { margin-bottom: 2em; }
+.nested iframe,
+.nested ol { margin-bottom: 2em; }
 
 .nested img {
   width: 100%;

@@ -2,7 +2,7 @@
 <a href="{{ post.url | absolute_url }}"
   title="{{ post.title }}"
   class="link db pv3 hide-child relative pl3 dark-gray z-0 nl3 nr3
-    {% if post.style == 'dark' %}hover-white-child{% endif %}">
+    {% if post.style == 'dark' %}hover-white-child{% endif %} {{ post.classes }}">
 
   <div class="absolute absolute--fill child z--1"
     style="background-color: {{ post.bgColor | default:'transparent' }};

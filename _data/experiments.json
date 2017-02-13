@@ -1,28 +1,44 @@
 [
   {
+    name: "Luna 9 Flight",
+    link: "https://winkervsbecks.github.io/luna-9-flight/",
+    img: "/img/luna-9.gif",
+    featured: true,
+  },
+  {
+    name: "Path Compiler",
+    link: "https://path-compiler-ysmnxsvmhh.now.sh",
+    img: "/img/path-compiler.gif",
+  },
+  {
     name: "Weight Selector",
     link: "http://codepen.io/winkerVSbecks/pen/amPaVz",
     img: "/img/weight-selector.gif",
+    featured: true,
   },
   {
     name: "Joystick",
     link: "https://winkervsbecks.github.io/joystick",
     img: "/img/joystick.gif",
+    featured: true,
   },
   {
     name: "Splash",
     link: "https://winkervsbecks.github.io/splash",
     img: "/img/splash.gif",
+    featured: true,
   },
   {
     name: "Touch ID",
     link: "http://codepen.io/winkerVSbecks/full/vGojNb/",
     img: "/img/touch-id.gif",
+    featured: true,
   },
   {
     name: "Chillwave",
     link: "http://winkervsbecks.github.io/chillwave",
     img: "/img/chillwave-alt.gif",
+    featured: true,
   },
   {
     name: "Pressed",
@@ -48,6 +64,7 @@
     name: "Truncation",
     link: "https://github.com/winkerVSbecks/truncation",
     img: "/img/truncation.gif",
+    featured: true,
   },
   {
     name: "Fermat Point",
@@ -76,7 +93,7 @@
   },
   {
     name: "Jamie XX",
-    link: "http://winkervsbecks.github.io/gems",
+    link: "http://winkervsbecks.github.io/jamieXX",
     img: "/img/jamiexx.gif",
   },
 ]
