@@ -19,7 +19,7 @@ The focus here is on front-end JavaScript frameworks such as React, Angular, Vue
 <!-- React -->
 <Icon type="cloud-with-snow" className="f4 blue" />
 <!-- Angular -->
-<app-icon type="cloud-with-snow" class="f4 blue"></app-icon>
+<svg icon type="cloud-with-snow" class="f4 blue"></svg>
 <!-- Vue.JS -->
 <icon type="cloud-with-snow" class="f4 blue"></icon>
 ```
