@@ -44,12 +44,12 @@
   },
   {
     name: "Homesick",
-    link: "/projects/homesick.html",
+    link: "/projects/homesick",
     img: "/img/homesick.png"
   },
   {
     name: "Tethered Motion",
-    link: "/projects/tethered-motion.html",
+    link: "/projects/tethered-motion",
     img: "/img/wave.gif"
   },
   {
@@ -77,7 +77,7 @@
   },
   {
     name: "Console Font",
-    link: "/projects/consolefont.html",
+    link: "/projects/consolefont",
     img: "/img/consolefont.png"
   },
   {
