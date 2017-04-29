@@ -1,5 +1,16 @@
 [
   {
+    name: "Reactive O",
+    link: "http://codepen.io/winkerVSbecks/pen/JNNjBQ",
+    img: "/img/reactive-o.gif",
+    featured: true,
+  },
+  {
+    name: "Nederland Expo 70",
+    link: "http://codepen.io/winkerVSbecks/full/VPgpJL/",
+    img: "/img/nederland-expo-70.gif",
+  },
+  {
     name: "Luna 9 Flight",
     link: "https://winkervsbecks.github.io/luna-9-flight/",
     img: "/img/luna-9.gif",
