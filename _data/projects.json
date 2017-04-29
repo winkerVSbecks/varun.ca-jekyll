@@ -1,7 +1,7 @@
 [
   {
     name: "tachyons-tldr",
-    link: "https://tachyons-tldr.now.sh/classes",
+    link: "https://tachyons-tldr.now.sh",
     repo: "https://github.com/winkerVSbecks/tachyons-tldr",
     img: "/img/tachyons-tldr.gif"
   },
