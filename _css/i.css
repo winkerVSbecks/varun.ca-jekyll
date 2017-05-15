@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6,
 .primary { color: #4e4bec; }
 .b--primary { border-color: #4e4bec; }
 .bg-primary { background-color: #4e4bec; }
+.bg-tertiary { background-color: #f8f8ff;; }
 
 .secondary { color: #ececfd; }
 .b--secondary { border-color: #ececfd; }
@@ -200,7 +201,8 @@ figure.highlight {
 
 .nested p,
 .nested iframe,
-.nested ol { margin-bottom: 2em; }
+.nested ol,
+.nested figure { margin-bottom: 2em; }
 
 .nested img {
   width: 100%;
