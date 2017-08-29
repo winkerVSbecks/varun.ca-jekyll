@@ -1,5 +1,11 @@
 [
   {
+    name: "Napoleon's Theorem",
+    link: "https://codepen.io/winkerVSbecks/full/yoVQbp/",
+    img: "/img/napoleon-theorem.gif",
+    featured: true,
+  },
+  {
     name: "Reactive O",
     link: "http://codepen.io/winkerVSbecks/full/RVVYbR/",
     img: "/img/reactive-o.gif",
