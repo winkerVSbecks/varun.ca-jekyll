@@ -1,5 +1,11 @@
 [
   {
+    name: "SA 15",
+    link: "https://codepen.io/winkerVSbecks/full/gXOdEL/",
+    img: "/img/sa15.gif",
+    featured: true
+  },
+  {
     name: "Amoeba",
     link: "https://codepen.io/winkerVSbecks/full/RLyNEE/",
     img: "/img/amoeba.gif",
@@ -49,7 +55,7 @@
     name: "Splash",
     link: "https://winkervsbecks.github.io/splash",
     img: "/img/splash.gif",
-    featured: true
+    featured: false
   },
   {
     name: "Touch ID",
