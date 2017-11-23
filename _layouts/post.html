@@ -51,11 +51,25 @@ layout: default
   return t;
 }(document, "script", "twitter-wjs"));</script>
 <script>
-  function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+function _toConsumableArray(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+    return arr2;
+  } else {
+    return Array.from(arr);
+  }
+}
 
-  var headingQuery = 'h2[id],h3[id],h4[id],h5[id],h6[id]';
-  var headings = document.querySelectorAll(headingQuery);
-  [].concat(_toConsumableArray(headings)).forEach(function (heading) {
-  heading.innerHTML = '<a href="#' + heading.id + '" class="link" style="color: inherit;"> ' + heading.innerText + ' </a>';
-  });
+var headingQuery = 'h2[id],h3[id],h4[id],h5[id],h6[id]';
+var headings = document.querySelectorAll(headingQuery);
+[].concat(_toConsumableArray(headings)).forEach(function(heading) {
+  heading.innerHTML =
+    '<a href="#' +
+    heading.id +
+    '" class="link" style="color: inherit;"> ' +
+    heading.innerText +
+    ' </a>';
+});
 </script>

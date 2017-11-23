@@ -58,12 +58,12 @@ title: Varun Vachhar
       <a title="{{ site.writing_desc }}"
         class="db link f4 bb pv3 dark-gray hide-move-child flex items-center"
         href="{{ 'writing' | absolute_url }}">
-        Recent Posts
+        Writing
         {% include icons/icon.html type="arrow-right" class="child ml1" %}
       </a>
     </h2>
 
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts limit:4 %}
       <a class="db f4 link dark-gray pv3 bb dim"
         href="{{ post.url | absolute_url }}"
         title="{{ post.title }}">
