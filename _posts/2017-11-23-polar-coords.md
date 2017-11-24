@@ -48,7 +48,7 @@ Cartesian coordinates are a great choice for placing things evenly on a rectangu
 
 {% include diagrams/polar-patterns.html %}
 
-Below is the JavaScript implementation of this idea. The `points` function also accepts an optional `offset` argument to shift the points along the perimeter of the circle. For example, the outermost circle of points in **Figure 4** can be generated using `points(12, 200)`. The next one inwards using `points(12, 175, 15)`. The one after that using `points(12, 150, 30)` and so on. My [splash](https://codepen.io/winkerVSbecks/pen/oLmqQo) CodePen is an animated example of this.
+Below is the JavaScript implementation of this idea. The `points` function also accepts an optional `offset` argument to shift the points along the perimeter of the circle. For example, the outermost circle of points in **Figure 4** can be generated using `points(12, 200)`. The next one inwards using `points(12, 175, 15)`. The one after that using `points(12, 150, 30)` and so on. My [splash](https://codepen.io/winkerVSbecks/pen/oLmqQo) CodePen is was built using this.
 
 ```js
 function points(count, radius, offset = 0) {
@@ -76,7 +76,7 @@ function degreesToRadians(angleInDegrees) {
 
 ## Polygon Generator
 
-A regular polygon is a polygon that is equiangular i.e., all its angles are equal and all its sides have the same length. This means that all the vertices of a regular polygon are points evenly spaced on a circle. And isn't it handy that we just created a function that does exactly this!
+A regular polygon is a polygon that is equiangular i.e., all its angles are equal and all its sides have the same length. This means that all the vertices of a regular polygon are points evenly spaced on a circle. And isn't it handy that we just created a function that generates exactly this!
 
 {% include diagrams/polar-polygon.html %}
 
@@ -165,7 +165,7 @@ window.setInterval(() => { theta++; }, 1000 / 60);
 
 We started by looking at individual points. Then we grouped a few points into a [set](https://en.wikipedia.org/wiki/Set_(mathematics)) to define shapes. For this we used the polygon generator function to compute the location of each vertex of the shape. We can write similar functions using other mathematical equations. Allowing us to generate more complex shapes and curves.
 
-Two dimensional curves are described by equations of the type `y = f(x)`. For example the equation of a circle is <b><code>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></code></b>. We can generate the set of points, called [locus](https://en.wikipedia.org/wiki/Locus_(mathematics)), by iterating `x` and computing the corresponding `y` value or vice-versa. Therefore, each point will be of the form `(x, f(x))` or `(f(y), y)`.
+Two dimensional curves are described by equations of the type `y = f(x)`. For example the equation of a circle is <code>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></code>. We can generate the set of points, called [locus](https://en.wikipedia.org/wiki/Locus_(mathematics)), by iterating `x` and computing the corresponding `y` value or vice-versa. Therefore, each point will be of the form `(x, f(x))` or `(g(y), y)`.
 
 With polar coordinates we can similarly draw polar curves. For example, the polar equation of a circle is `r = 2 * cos(0)`. The points on a polar curve have the form `(r(0), 0)`.
 
@@ -185,7 +185,7 @@ const y = cy + r * Math.sin(theta);
 
 ## Eukleides
 
-All the diagrams in this post were created using a language called [eukleides](http://www.eukleides.org). It is a pretty amazing tool for making geometric drawings.
+All the diagrams in this post were created using a language called [eukleides](http://www.eukleides.org). It is a fantastic tool for making geometric drawings. Just look at this declarative API 😍
 
 ```
 c = circle(point(3, 0), 3)
