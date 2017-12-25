@@ -10,7 +10,9 @@
     {% endif %}
   </title>
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
-  <meta name="description" content="{{ site.description }}">
+  {% if page.url == '/' %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
   <link rel="author" href="humans.txt">
   {% include favicons.html %}
   <style>{% include index.css %}</style>
