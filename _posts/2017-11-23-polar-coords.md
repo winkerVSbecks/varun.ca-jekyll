@@ -11,7 +11,6 @@ A coordinate system allows us to use numbers to determine the position of points
 
 {% include diagrams/carts-coords.html %}
 
-
 ## Polar Coordinate System
 
 Polar coordinate system is a 2D coordinate system in which each point is determined by `r` & `θ`. Where `r` is the distance from the origin and `θ` is the angle from the x-axis.
@@ -26,7 +25,6 @@ Trigonometry! Love it or hate, it it is everywhere. You can convert a point from
 const x = r * Math.cos(theta);
 const y = r * Math.sin(theta);
 ```
-
 
 ## Patterns
 
@@ -52,13 +50,25 @@ Below is the JavaScript implementation of this idea. The `points` function also 
 
 ```js
 function points(count, radius, offset = 0) {
-  const angle = offset + (360 * index / count);
+  const angle = offset + 360 * index / count;
   const vertexIndices = range(sideCount);
 
-  return vertexIndices.map((index) => {
+  return vertexIndices.map(index => {
     return {
       r: radius,
       theta: degreesToRadians(angle),
+    };
+  });
+}
+
+function points(count, radius, offset = 0) {
+  const angle = 360 / count;
+  const vertexIndices = range(count);
+
+  return vertexIndices.map(index => {
+    return {
+      theta: offset + degreesToRadians(offset + angle * index),
+      r: radius,
     };
   });
 }
@@ -69,10 +79,9 @@ function range(count) {
 }
 
 function degreesToRadians(angleInDegrees) {
-  return (Math.PI * angleInDegrees) / 180;
+  return Math.PI * angleInDegrees / 180;
 }
 ```
-
 
 ## Polygon Generator
 
@@ -116,8 +125,8 @@ Seems simple but, you can do a lot of interesting things with it. Here are a cou
 <p data-height="600" data-theme-id="26435" data-slug-hash="PmNJpJ" data-default-tab="result" data-user="winkerVSbecks" data-embed-version="2" data-pen-title="Hex-a-portal (Dynamic + RGB)" class="codepen">See the Pen <a href="https://codepen.io/winkerVSbecks/pen/PmNJpJ/">Hex-a-portal (Dynamic + RGB)</a> by Varun Vachhar (<a href="https://codepen.io/winkerVSbecks">@winkerVSbecks</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-
 ## Relative Polar Coordinates
+
 When you define a point as `(r, θ)`, by default, this is relative to the origin `(0, 0)`. We can define points relative to other points by shifting the origin. This is often used for defining the position of curve handles relative to a vertex.
 
 ```js
@@ -144,7 +153,6 @@ function toCartesian({ r, theta }, [cx, cy]) {
 <p data-height="700" data-theme-id="26435" data-slug-hash="wrZQQm" data-default-tab="result" data-user="winkerVSbecks" data-embed-version="2" data-pen-title="SVG Polygon Generator" class="codepen">See the Pen <a href="https://codepen.io/winkerVSbecks/pen/wrZQQm/">SVG Polygon Generator</a> by Varun Vachhar (<a href="https://codepen.io/winkerVSbecks">@winkerVSbecks</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-
 ## Rotation
 
 Another common application of polar coordinates is to rotate things around a point. Here `(cx, cy)` is the point about which you want to rotate.
@@ -154,18 +162,19 @@ x = cx + r * Math.cos(theta);
 y = cy + r * Math.sin(theta);
 
 // somewhere in an animation loop
-window.setInterval(() => { theta++; }, 1000 / 60);
+window.setInterval(() => {
+  theta++;
+}, 1000 / 60);
 ```
 
 <p data-height="500" data-theme-id="26435" data-slug-hash="aOEeXB" data-default-tab="result" data-user="Yakudoo" data-embed-version="2" data-pen-title="Rocket around the moon" class="codepen">See the Pen <a href="https://codepen.io/Yakudoo/pen/aOEeXB/">Rocket around the moon</a> by Karim Maaloul (<a href="https://codepen.io/Yakudoo">@Yakudoo</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-
 ## Polar curves
 
-We started by looking at individual points. Then we grouped a few points into a [set](https://en.wikipedia.org/wiki/Set_(mathematics)) to define shapes. For this we used the polygon generator function to compute the location of each vertex of the shape. We can write similar functions using other mathematical equations. Allowing us to generate more complex shapes and curves.
+We started by looking at individual points. Then we grouped a few points into a [set](<https://en.wikipedia.org/wiki/Set_(mathematics)>) to define shapes. For this we used the polygon generator function to compute the location of each vertex of the shape. We can write similar functions using other mathematical equations. Allowing us to generate more complex shapes and curves.
 
-Two dimensional curves are described by equations of the type `y = f(x)`. For example the equation of a circle is <code>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></code>. We can generate the set of points, called [locus](https://en.wikipedia.org/wiki/Locus_(mathematics)), by iterating `x` and computing the corresponding `y` value or vice-versa. Therefore, each point will be of the form `(x, f(x))` or `(g(y), y)`.
+Two dimensional curves are described by equations of the type `y = f(x)`. For example the equation of a circle is <code>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></code>. We can generate the set of points, called [locus](<https://en.wikipedia.org/wiki/Locus_(mathematics)>), by iterating `x` and computing the corresponding `y` value or vice-versa. Therefore, each point will be of the form `(x, f(x))` or `(g(y), y)`.
 
 With polar coordinates we can similarly draw polar curves. For example, the polar equation of a circle is `r = 2 * cos(0)`. The points on a polar curve have the form `(r(0), 0)`.
 
@@ -181,7 +190,6 @@ const y = cy + r * Math.sin(theta);
 
 <p data-height="600" data-theme-id="26435" data-slug-hash="pdVLPo" data-default-tab="js,result" data-user="winkerVSbecks" data-embed-version="2" data-pen-title="Cardioid" class="codepen">See the Pen <a href="https://codepen.io/winkerVSbecks/pen/pdVLPo/">Cardioid</a> by Varun Vachhar (<a href="https://codepen.io/winkerVSbecks">@winkerVSbecks</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
 
 ## Eukleides
 
