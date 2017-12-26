@@ -60,7 +60,7 @@ One of the major benefits of JSX is that it allows you to write all the code for
 ```html
 <template>
   <h1 class="f1">Hello, {{ name }}</h1>
-</tempalte>
+</template>
 
 <script>
 export default {
@@ -103,7 +103,7 @@ Vue supports scoping through the single file component syntax. Just add the `sco
 ```html
 <template>
   <h1 class="f1">Hello, {{ name }}</h1>
-</tempalte>
+</template>
 
 <script>
 export default {
@@ -123,7 +123,7 @@ export default {
   <h1 :class="$style.f1">
     {% raw %}Hello, {{ name }}{% endraw %}
   </h1>
-</tempalte>
+</template>
 
 <style module>
   .f1 { font-size: 3rem; }
