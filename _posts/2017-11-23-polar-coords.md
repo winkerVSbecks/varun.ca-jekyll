@@ -92,7 +92,7 @@ To generate an SVG polygon we will generate the list of of points using the `poi
  */
 function polygon(noOfSides, circumradius, rotation) {
   return points(noOfSides, circumradius, rotation)
-    .map((toCartesian({ r, theta }))
+    .map(toCartesian)
     .join(' ');
 }
 
