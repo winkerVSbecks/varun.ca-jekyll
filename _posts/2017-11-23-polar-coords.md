@@ -50,18 +50,6 @@ Below is the JavaScript implementation of this idea. The `points` function also 
 
 ```js
 function points(count, radius, offset = 0) {
-  const angle = offset + 360 * index / count;
-  const vertexIndices = range(sideCount);
-
-  return vertexIndices.map(index => {
-    return {
-      r: radius,
-      theta: degreesToRadians(angle),
-    };
-  });
-}
-
-function points(count, radius, offset = 0) {
   const angle = 360 / count;
   const vertexIndices = range(count);
 
