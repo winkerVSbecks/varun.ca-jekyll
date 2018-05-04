@@ -130,10 +130,12 @@ title: Varun Vachhar
     </h2>
 
     {% for talk in site.data.talks %}
-      <a class="db f4 link dark-gray pv3 bb dim"
+      <a class="db f4 link dark-gray pv3 bb dim flex items-baseline"
         href="{{ talk.link }}"
         title="{{ talk.title }}">
         {{ talk.title }}
+        <span class="flex-auto"></span>
+        <small class="gray ml1" style="font-size: 0.75rem">{{ talk.conference }}</small>
       </a>
     {% endfor %}
   </section>

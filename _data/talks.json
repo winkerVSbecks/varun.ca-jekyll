@@ -1,18 +1,27 @@
 [
   {
-    title: "Slaying Your Webpack Dragon 🐲",
-    link: "https://winkervsbecks.github.io/slaying-your-webpack-dragon",
+    "title": "Mathematics of Animation",
+    "conference": ".concat() 2018",
+    "link": "https://winkervsbecks.github.io/mathematics-of-animation"
   },
   {
-    title: "Mathematics of Animation",
-    link: "https://www.youtube.com/watch?v=tBzmc98_STE",
+    "title": "Slaying Your Webpack Dragon 🐲",
+    "conference": "CSS Dev Conf 2017",
+    "link": "https://winkervsbecks.github.io/slaying-your-webpack-dragon"
   },
   {
-    title: "Creative Coding with React &amp; SVG",
-    link: "https://www.youtube.com/watch?v=D40JphLwqpk",
+    "title": "Mathematics of Animation",
+    "conference": "FITC Toronto 2017",
+    "link": "https://www.youtube.com/watch?v=tBzmc98_STE"
   },
   {
-    title: "Intro To React Native",
-    link: "https://www.youtube.com/watch?v=5qYxYpbaR5k",
+    "title": "Creative Coding with React &amp; SVG",
+    "conference": "FITC Toronto 2016",
+    "link": "https://www.youtube.com/watch?v=D40JphLwqpk"
   },
+  {
+    "title": "Intro To React Native",
+    "conference": "Spotlight React 2017",
+    "link": "https://www.youtube.com/watch?v=5qYxYpbaR5k"
+  }
 ]
