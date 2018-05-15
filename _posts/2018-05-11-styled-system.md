@@ -40,7 +40,86 @@ render(
 
 You define your design system as a theme object (example below) and then provide it using the `ThemeProvider` component.
 
-<iframe src="https://codesandbox.io/embed/2vv327jqjp?hidenavigation=1&module=%2Fsrc%2Ftheme.js&view=editor" style="width:100%; height:500px; border:0; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+```js
+export const theme = {
+  breakpoints: [32, 48, 64],
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  fontSizes: [12, 14, 16, 20, 24, 36, 48, 80, 96],
+  fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+  lineHeights: {
+    solid: 1,
+    title: 1.25,
+    copy: 1.5,
+  },
+  letterSpacings: {
+    normal: 'normal',
+    tracked: '0.1em',
+    tight: '-0.05em',
+    mega: '0.25em',
+  },
+  fonts: {
+    serif: 'athelas, georgia, times, serif',
+    sansSerif:
+      '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
+  },
+  borders: [
+    0,
+    '1px solid',
+    '2px solid',
+    '4px solid',
+    '8px solid',
+    '16px solid',
+    '32px solid',
+  ],
+  radii: [0, 2, 4, 16, 9999, '100%'],
+  width: [16, 32, 64, 128, 256],
+  heights: [16, 32, 64, 128, 256],
+  maxWidths: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  colors: {
+    black: '#000',
+    'near-black': '#111',
+    'dark-gray': '#333',
+    'mid-gray': '#555',
+    gray: ' #777',
+    silver: '#999',
+    'light-silver': '#aaa',
+    'moon-gray': '#ccc',
+    'light-gray': '#eee',
+    'near-white': '#f4f4f4',
+    white: '#fff',
+    transparent: 'transparent',
+    blacks: [
+      'rgba(0,0,0,.0125)',
+      'rgba(0,0,0,.025)',
+      'rgba(0,0,0,.05)',
+      'rgba(0,0,0,.1)',
+      'rgba(0,0,0,.2)',
+      'rgba(0,0,0,.3)',
+      'rgba(0,0,0,.4)',
+      'rgba(0,0,0,.5)',
+      'rgba(0,0,0,.6)',
+      'rgba(0,0,0,.7)',
+      'rgba(0,0,0,.8)',
+      'rgba(0,0,0,.9)',
+    ],
+    whites: [
+      'rgba(255,255,255,.0125)',
+      'rgba(255,255,255,.025)',
+      'rgba(255,255,255,.05)',
+      'rgba(255,255,255,.1)',
+      'rgba(255,255,255,.2)',
+      'rgba(255,255,255,.3)',
+      'rgba(255,255,255,.4)',
+      'rgba(255,255,255,.5)',
+      'rgba(255,255,255,.6)',
+      'rgba(255,255,255,.7)',
+      'rgba(255,255,255,.8)',
+      'rgba(255,255,255,.9)',
+    ],
+    // ... and so on
+  },
+};
+```
 
 Style functions will try to find a value from the theme object, these could be deeply nested values, and fallback to a hard-coded value if they are unable to.
 
@@ -175,7 +254,30 @@ Heading.displayName = 'Heading';
 
 In the previous, post I had created a Profile Card component. Here's the whole example recreated with system-components.
 
-<iframe src="https://codesandbox.io/embed/v86m4zkyy0?view=split&hidenavigation=1&module=%2Fsrc%2Fdesign-system%2Fprimitives.js" style="width:100%; height:500px; border:0; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<p style="margin-bottom: -2rem;">
+  <a href="https://codesandbox.io/s/v86m4zkyy0" class="dib" style="border: 0;">
+    <img alt="Edit Design System Demo — Profile Card" style="width: 12rem;" src="https://codesandbox.io/static/img/play-codesandbox.svg">
+  </a>
+</p>
+
+```js
+import React from 'react';
+import { Card, Box, Heading, Text, Avatar } from './design-system';
+
+export const ProfileCard = ({ image, name, title, ...props }) => (
+  <Card {...props} p={[3, 4, 4]} borderColor="blacks.3">
+    <Box textAlign="center">
+      <Avatar width={3} height={3} mb={2} borderColor="blacks.2" src={image} />
+      <Heading is="h2" fontSize={4} mb={2}>
+        {name}
+      </Heading>
+      <Text fontSize={2} my={0}>
+        {title}
+      </Text>
+    </Box>
+  </Card>
+);
+```
 
 ## Input With Adornment Example
 
