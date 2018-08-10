@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Reuleaux Polygons"
-classes: bg-animate hover-bg-dark-blue
-style: dark
+bgImage: /img/reuleaux-polygons.gif
+bgPosition: 75% 50%
+bgSize: 400px 300px
+bgColor: '#A1D1FB'
+style: light
 ---
 
 {% include diagrams/reuleaux-polygons.html %}
