@@ -16,7 +16,7 @@ Reuleaux polygons are a generalization of the Reuleaux triangle. They are a curv
 
 ## Construction
 
-The Reuleaux triangle is constructed by drawing arcs from each vertex an equilateral triangle. Where the radius of these circles equals the side length of the triangle.
+The Reuleaux triangle is constructed by drawing circles from each vertex of an equilateral triangle. Where the radius of these circles equals the side length of the triangle.
 
 <p data-height="650" data-theme-id="26435" data-slug-hash="vrLmPq" data-default-tab="result" data-user="winkerVSbecks" data-embed-version="2" data-pen-title="Reuleaux Polygon Construction" class="codepen">See the Pen <a href="https://codepen.io/winkerVSbecks/pen/vrLmPq/">Reuleaux Polygon Construction</a> by Varun Vachhar (<a href="https://codepen.io/winkerVSbecks">@winkerVSbecks</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
