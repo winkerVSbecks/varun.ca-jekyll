@@ -1,5 +1,16 @@
 [
   {
+    "name": "Stacks",
+    "link": "https://codepen.io/winkerVSbecks/full/rdXBLr/",
+    "img": "/img/stacks.gif",
+    "featured": true
+  },
+  {
+    "name": "Isometric Ball",
+    "link": "https://codepen.io/winkerVSbecks/full/rdXBLr/",
+    "img": "/img/isometric-ball.gif"
+  },
+  {
     "name": "Carnival Nights",
     "link": "https://codepen.io/winkerVSbecks/full/rdXBLr/",
     "img": "/img/carnival-nights.gif"
@@ -52,8 +63,7 @@
   {
     "name": "Luna 9 Flight",
     "link": "https://winkervsbecks.github.io/luna-9-flight/",
-    "img": "/img/luna-9.gif",
-    "featured": true
+    "img": "/img/luna-9.gif"
   },
   {
     "name": "Path Compiler",
