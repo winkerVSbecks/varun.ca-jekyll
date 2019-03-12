@@ -1,19 +1,45 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary Meta Tags -->
   <title>
     {% if page.title %}
-      {{ page.title }}
+    {{ page.title }}
     {% else %}
-      {{ site.title }} – {{ site.description }}
-    {% endif %}
+    {{ site.title }} – finder of new ways to confuse myself {% endif %}
   </title>
-  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
-  {% if page.url == '/' %}
-    <meta name="description" content="{{ site.description }}">
-  {% endif %}
-  <link rel="author" href="humans.txt">
+  <meta name="description" content="{{ site.description }}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://varun.ca/" />
+  <meta property="og:title" content="Varun Vachhar" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="{{ '/triangle.png' | absolute_url }}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://varun.ca/" />
+  <meta property="twitter:title" content="Varun Vachhar" />
+  <meta property="twitter:description" content="{{ site.description }}" />
+  <meta
+    property="twitter:image"
+    content="{{ '/triangle.png' | absolute_url }}"
+  />
+  <meta
+    property="twitter:image:src"
+    content="{{ '/triangle.png' | absolute_url }}"
+  />
+
+  <link
+    rel="canonical"
+    href="{{ site.url }}{{ page.url | replace:'index.html',''}}"
+  />
+  <link rel="author" href="humans.txt" />
   {% include favicons.html %}
-  <style>{% include index.css %}</style>
+  <style>
+    {% include index.css %}
+  </style>
 </head>

@@ -243,7 +243,7 @@ function metaballToPath(p1, p2, p3, p4, h1, h2, h3, h4, escaped, r) {
     'M', p1,
     'C', h1, h3, p3,
     'A', r, r, 0, escaped ? 1 : 0, 0, p4,
-    'C', h4, h3, p4,
+    'C', h4, h2, p2,
   ].join(' ');
 }
 ```
