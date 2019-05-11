@@ -2,8 +2,8 @@
 layout: post
 title: "Why Not Both?"
 bgImage: /img/why-not-both.jpg
-bgPosition: 100% 50%
-bgSize: 200px 150px
+bgPosition: 100% 45%
+bgSize: 400px 300px
 bgColor: '#fff'
 style: light
 ---
