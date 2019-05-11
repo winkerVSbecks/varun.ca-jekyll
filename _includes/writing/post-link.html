@@ -1,21 +1,23 @@
-{% assign post = include.post  %}
-<a href="{{ post.url | absolute_url }}"
-  title="{{ post.title }}"
+{% assign post = include.post %}
+<a
+  href="{{ post.url | absolute_url }}"
   class="link db pv3 hide-child relative pl3 dark-gray z-0 nl3 nr3
-    {% if post.style == 'dark' %}hover-white-child{% endif %} {{ post.classes }}">
-
-  <div class="absolute absolute--fill child z--1"
-    style="background-color: {{ post.bgColor | default:'transparent' }};
+    {% if post.style == 'dark' %}hover-white-child{% endif %} {{
+    post.classes
+  }}"
+>
+  <div
+    class="absolute absolute--fill child z--1"
+    style="background-color: {{ post.bgColor | default: 'transparent' }};
     background-image: url('{{ post.bgImage }}');
-    background-position: {{ post.bgPosition | default:'center center' }};
-    background-size: {{ post.bgSize | default:'100%' }};
-    background-repeat: {{ post.bgRepeat | default:'no-repeat' }};">
-  </div>
+    background-position: {{ post.bgPosition | default: 'center center' }};
+    background-size: {{ post.bgSize | default: '100%' }};
+    background-repeat: {{ post.bgRepeat | default: 'no-repeat' }};"
+  ></div>
 
   <date class="f6 gray db mb1" datetime="{{ post.date }}">
     {% include writing/date.html date=post.date %}
   </date>
 
   <span class="f3 f2-ns">{{ post.title }}</span>
-
 </a>
