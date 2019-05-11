@@ -77,7 +77,7 @@ The [Compositor](http://compositor.io/) team has been working on some truly inte
 
 [Project Phoebe](https://medium.com/project-phoebe) was a brief attempt at using mutative design for UI and Adobe seems to be [exploring](https://www.fastcompany.com/3068884/adobe-is-building-an-ai-to-automate-web-design-should-you-worry) this space too. But, we are just scratching the surface. What would the UI design equivalent of [Real Time Topology Optimization](https://www.frustum.com/) look like? Can we define a set of constraints, allow the UI to morph around it and iterate?
 
-You can start leveraging the power of the medium. You don't have to manually create all the possible layouts. You have the ingredients. You can define a recipe and explore all the possible permutations.
+With generative design you can start leveraging the power of the medium. You don't have to manually create all the possible layouts. You have the ingredients. You can define a recipe and explore all the possible permutations.
 
 <blockquote style="margin-bottom: 2em;">
   <p>Generative design mimics nature’s evolutionary approach to design. Designers or engineers input design goals into generative design software, along with parameters such as materials, manufacturing methods, and cost constraints. The software explores all the possible permutations of a solution, quickly generating design alternatives. It tests and learns from each iteration what works and what doesn’t.</p>
